@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>הכל בקליק — מערכת לקביעת תורים אונליין לעסקים | זימון תורים לעסקי יופי</title>
+<meta name="description" content="מערכת לקביעת תורים אונליין לעסקים: אתר זימון תורים בעיצוב שלך, קביעת תור 24/7, שעות שהתפנו מתמלאות לבד, תזכורות ב-SMS, במייל ובשיחה לטלפון כשר. לאסתטיקה, מספרות, ציפורניים, לייזר, גבות וריסים.">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="YdmacDDxQraSYfFAohFsAgVvaY2FkVmRaCXLjc_fjgM" />
+<meta name="google-site-verification" content="1Ytvoe2M5aChm36bOTTZ04rMzeOBvadQsFh7bbypgNY" />
+<link rel="canonical" href="https://hakolbeklik.com/">
+<meta property="og:url" content="https://hakolbeklik.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "הכל בקליק",
+  "alternateName": "הכל בקליק — מערכת לקביעת תורים אונליין",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "inLanguage": "he",
+  "description": "מערכת לקביעת תורים אונליין וזימון תורים לעסקים: אתר תורים בעיצוב העסק, קביעת תור 24/7, מילוי אוטומטי של שעות שהתפנו, תזכורות ב-SMS, במייל ובשיחה קולית לטלפון כשר, יומן צוות ודוחות.",
+  "audience": { "@type": "BusinessAudience", "audienceType": "מכוני אסתטיקה, מספרות, ציפורניים, הסרת שיער בלייזר, גבות וריסים" },
+  "provider": { "@type": "Organization", "name": "הכל בקליק", "telephone": "+972-54-892-0993", "email": "allclick2027@gmail.com", "areaServed": "IL" }
+}
+</script>
+<meta property="og:title" content="הכל בקליק — את בטיפול. התורים מסתדרים לבד.">
+<meta property="og:description" content="מערכת תורים חכמה לעסקי יופי. קביעת תור 24/7, שעות שהתפנו מתמלאות לבד, תזכורות ב-SMS, במייל ובשיחה.">
+<meta property="og:image" content="https://hakolbeklik.com/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#16264a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F3D98B'/%3E%3Cstop offset='1' stop-color='%23C9962E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Cpath d='M22 18l22 10-9 3-3 9z' fill='none' stroke='%23fff' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M35 31l9 9' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg0:#0f1a33; --bg1:#16264a; --bg2:#2c1858; --violet:#3c5fa8; --lilac:#9fbbe8; --lilac2:#d6e3f7;
+  --teal:#4fb3ad; --gold1:#f6dd92; --gold2:#e2b552; --gold3:#c58f2c; --ink:#f7f3ff; --muted:#c3cfe3;
+  --card:rgba(255,255,255,.06); --card2:rgba(255,255,255,.1); --line:rgba(255,255,255,.12);
+  --green:#1f9d55; --red:#e5484d;
+  --r:22px; --gutter:clamp(16px,4vw,40px); --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Heebo,system-ui,Arial,sans-serif;background:var(--bg0);color:var(--ink);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.gold{background:linear-gradient(100deg,var(--gold3),var(--gold1) 30%,#fff3c8 45%,var(--gold2) 60%,var(--gold3));background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:-220% 0}}
+
+/* ---------- background ---------- */
+/* רקע כחול עמוק שמתחלף לאט מאוד בין גווני כחול (נייבי, כחול רויאל, כחול-ים) — בלי תכלת בהיר, כדי שהזהב יבלוט */
+.sky{position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(1200px 800px at 85% -10%,rgba(140,180,255,.16),transparent 60%),
+             linear-gradient(125deg,#13224a,#1d3a73,#1a4a7a,#243f86,#173763,#13224a);
+  background-size:100% 100%,400% 400%;animation:skyshift 60s ease-in-out infinite}
+@keyframes skyshift{0%{background-position:0 0,0% 50%}50%{background-position:0 0,100% 50%}100%{background-position:0 0,0% 50%}}
+.b1,.b2,.b3{mix-blend-mode:screen}
+.blob{position:fixed;z-index:-1;border-radius:50%;filter:blur(70px);opacity:.55;pointer-events:none;will-change:transform}
+.b1{width:46vmax;height:46vmax;background:#2f5fb3;top:-14vmax;right:-12vmax;animation:drift1 22s ease-in-out infinite alternate}
+.b2{width:34vmax;height:34vmax;background:#1f6f8b;bottom:-12vmax;left:-10vmax;opacity:.35;animation:drift2 26s ease-in-out infinite alternate}
+.b3{width:22vmax;height:22vmax;background:#c58f2c;top:40%;left:35%;opacity:.16;animation:drift3 30s ease-in-out infinite alternate}
+@keyframes drift1{to{transform:translate(-8vmax,10vmax) scale(1.1)}}
+@keyframes drift2{to{transform:translate(10vmax,-8vmax) scale(1.15)}}
+@keyframes drift3{to{transform:translate(-12vmax,-6vmax) scale(.9)}}
+#stars{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.spot{position:fixed;z-index:-1;width:520px;height:520px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(150,180,230,.16),transparent 65%);transform:translate(-50%,-50%);left:-999px;top:-999px;transition:opacity .4s}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;inset-inline:0;z-index:50;transition:background .3s,backdrop-filter .3s,box-shadow .3s}
+.nav.solid{background:rgba(15,26,51,.78);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:22px;letter-spacing:-.3px}
+.logo{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,var(--gold1),var(--gold2) 55%,var(--gold3));box-shadow:0 6px 24px rgba(226,181,82,.45),inset 0 -3px 8px rgba(0,0,0,.18)}
+.logo svg{width:24px;height:24px}
+.links{display:flex;gap:26px;font-weight:500;color:var(--muted)}
+.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:800;padding:14px 26px;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-gold{color:#2a1a05;background:linear-gradient(135deg,var(--gold1),var(--gold2) 55%,var(--gold3));box-shadow:0 10px 30px rgba(226,181,82,.35),inset 0 1px 0 rgba(255,255,255,.6)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(226,181,82,.5)}
+.btn-ghost{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn svg{width:20px;height:20px;flex:none}
+.nav .btn{padding:10px 20px;font-size:15px}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;align-items:center;padding:110px 0 70px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:700;font-size:15px;background:linear-gradient(90deg,rgba(150,180,230,.28),rgba(70,110,190,.28));border:1px solid rgba(255,255,255,.18)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 rgba(79,179,173,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(79,179,173,0)}100%{box-shadow:0 0 0 0 rgba(79,179,173,0)}}
+h1{font-size:clamp(44px,7.2vw,92px);line-height:1.02;font-weight:900;letter-spacing:-1.5px;margin:22px 0 22px}
+h1 .l{display:block;overflow:hidden}
+h1 .l span{display:inline-block;transform:translateY(105%);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+h1 .l:nth-child(2) span{animation-delay:.15s}
+@keyframes rise{to{transform:none}}
+.lead{font-size:clamp(18px,2vw,22px);color:var(--muted);max-width:560px}
+.lead b{color:#fff;font-weight:700}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:40px}
+.stat b{display:block;font-size:30px;font-weight:900;line-height:1}
+.stat span{font-size:14px;color:var(--muted)}
+
+.stage{position:relative;height:620px;perspective:1400px}
+.phone{position:absolute;width:270px;aspect-ratio:9/19.3;border-radius:44px;padding:11px;background:linear-gradient(145deg,#2d2540,#0b0814);box-shadow:0 40px 80px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08),inset 0 0 0 2px rgba(255,255,255,.05)}
+.phone::before{content:"";position:absolute;top:18px;left:50%;transform:translateX(-50%);width:84px;height:24px;border-radius:20px;background:#0b0814;z-index:3}
+.screen{width:100%;height:100%;border-radius:34px;overflow:hidden;background:#e9e1f6;position:relative}
+.screen img{color:transparent;width:104%;max-width:none;height:100%;object-fit:cover;object-position:top right}
+.tilt{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .25s ease-out}
+.p1{right:4%;top:20px;transform:rotate(4deg) translateZ(40px);animation:float1 7s ease-in-out infinite}
+.p2{left:2%;top:120px;width:236px;transform:rotate(-7deg) translateZ(-20px);opacity:.95;animation:float2 8s ease-in-out infinite}
+@keyframes float1{50%{translate:0 -14px}}
+@keyframes float2{50%{translate:0 12px}}
+.chip{position:absolute;z-index:5;display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:16px;font-weight:700;font-size:15px;color:#16264a;background:#fff;box-shadow:0 14px 34px rgba(0,0,0,.35);opacity:0;animation:pop .6s cubic-bezier(.2,1.4,.4,1) forwards}
+.chip small{display:block;font-weight:500;font-size:12px;color:#6b5f80}
+.chip .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;color:#fff;font-size:18px}
+.c1{top:6%;left:-2%;animation-delay:1.1s}
+.c1 .ic{background:var(--green)}
+.c2{bottom:20%;right:-4%;animation-delay:1.7s}
+.c2 .ic{background:linear-gradient(135deg,var(--lilac),var(--violet))}
+.c3{bottom:2%;left:8%;animation-delay:2.3s}
+.c3 .ic{background:var(--teal)}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.85)}to{opacity:1;transform:none}}
+/* hero: big phone that plays the video */
+.stage{height:auto!important;padding:40px 0}
+.stage .tilt{position:relative}
+.hphone{position:relative;margin:0 auto;width:min(330px,72vw);aspect-ratio:9/19.3;border-radius:54px;padding:13px;cursor:pointer;
+  background:linear-gradient(145deg,#3a2f52,#0b0814);box-shadow:0 50px 110px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.1),0 0 140px rgba(60,95,168,.5);animation:float1 7s ease-in-out infinite}
+.hphone::before{content:"";position:absolute;top:22px;left:50%;transform:translateX(-50%);width:96px;height:26px;border-radius:20px;background:#0b0814;z-index:6;transition:opacity .4s}
+.hphone .screen{border-radius:42px;background:#0b0814}
+.hphone .screen img,.hphone .screen video{position:absolute;inset:0;width:100%;height:100%;max-width:none}
+.hphone .screen img{object-fit:cover;object-position:top center;transition:opacity .6s,transform .8s}
+.hphone .screen video{object-fit:contain;opacity:0;transition:opacity .6s}
+.hphone.playing .screen img{opacity:0;transform:scale(1.08)}
+.hphone.playing .screen video{opacity:1}
+.hphone.playing::before{opacity:0}
+.hphone.playing{animation-play-state:paused}
+.tap{position:absolute;z-index:5;left:50%;bottom:16%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;transition:opacity .4s;pointer-events:none}
+.tap .play{position:relative;inset:auto;margin:0;width:86px;height:86px;animation:breathe 2.2s ease-in-out infinite}
+.tap span:not(.play){font-weight:800;font-size:17px;color:#2a1d40;background:rgba(255,255,255,.92);padding:8px 16px;border-radius:999px;box-shadow:0 10px 24px rgba(0,0,0,.25);white-space:nowrap}
+.hphone.playing .tap{opacity:0}
+@keyframes breathe{50%{transform:scale(1.1);box-shadow:0 0 0 22px rgba(246,221,146,.12),0 20px 50px rgba(0,0,0,.5)}}
+.halo{position:absolute;inset:-34px;border-radius:84px;border:1px solid rgba(246,221,146,.3);animation:ring 4s ease-in-out infinite;pointer-events:none}
+.halo.h2{inset:-70px;border-radius:120px;opacity:.45;animation-delay:1.2s}
+.hctl{position:absolute;z-index:7;top:14px;inset-inline-end:14px;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;display:none;place-items:center;font-size:18px}
+.hphone.playing .hctl{display:grid}
+
+/* rotating slogans */
+.brandline{font-size:clamp(54px,8.6vw,112px);line-height:1;font-weight:900;letter-spacing:-2px;margin:20px 0 10px}
+.rot{position:relative;min-height:2.5em;font-size:clamp(28px,3.9vw,50px);line-height:1.18;font-weight:800;margin-bottom:22px}
+.rot .w{display:inline-block;opacity:0;transform:translateY(.6em) rotateX(-70deg);filter:blur(8px);transition:opacity .55s,transform .55s cubic-bezier(.2,1.2,.4,1),filter .55s;transform-origin:50% 100%}
+.rot .w.in{opacity:1;transform:none;filter:none}
+.rot .w.out{opacity:0;transform:translateY(-.5em);filter:blur(8px);transition-duration:.35s}
+.rot .hl{color:var(--gold1)}
+.rot::after{content:"";display:inline-block;width:4px;height:.9em;margin-inline-start:8px;vertical-align:-.08em;border-radius:2px;background:var(--gold2);animation:caret 1s steps(1) infinite}
+@keyframes caret{50%{opacity:0}}
+.dots{display:flex;gap:8px;margin:-6px 0 22px}
+.dots i{width:8px;height:8px;border-radius:4px;background:rgba(255,255,255,.22);transition:all .4s}
+.dots i.on{width:28px;background:linear-gradient(90deg,var(--gold3),var(--gold1))}
+
+.scroll-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);width:26px;height:42px;border:2px solid rgba(255,255,255,.35);border-radius:14px}
+.scroll-hint::after{content:"";position:absolute;top:8px;left:50%;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:wheel 1.8s infinite}
+@keyframes wheel{60%{transform:translateY(12px);opacity:0}100%{opacity:0}}
+
+/* ---------- marquee ---------- */
+.marquee{border-block:1px solid var(--line);background:rgba(255,255,255,.03);overflow:hidden;padding:18px 0;direction:ltr}
+.track{display:flex;gap:48px;width:max-content;animation:marq 28s linear infinite}
+.track span{font-size:clamp(20px,2.4vw,28px);font-weight:800;white-space:nowrap;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:48px}
+.track span::after{content:"✦";color:var(--gold2);font-size:.7em}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:clamp(80px,11vw,140px) 0;position:relative}
+.eyebrow{display:inline-block;font-weight:800;font-size:14px;letter-spacing:2px;color:var(--gold1);margin-bottom:14px}
+h2{font-size:clamp(34px,4.8vw,60px);line-height:1.08;font-weight:900;letter-spacing:-1px}
+.sub{color:var(--muted);font-size:clamp(17px,1.7vw,20px);margin-top:16px;max-width:640px}
+.center{text-align:center}
+.center .sub{margin-inline:auto}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+/* problem */
+.problem .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.calls{position:relative;height:420px}
+.call{position:absolute;display:flex;align-items:center;gap:14px;padding:16px 20px;border-radius:18px;background:#fff;color:#2a1d40;font-weight:700;box-shadow:0 18px 40px rgba(0,0,0,.35);width:min(330px,92%)}
+.call .x{width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;flex:none}
+.call time{margin-inline-start:auto;color:#8a7da3;font-weight:500;font-variant-numeric:tabular-nums}
+.calls .call{opacity:0;transform:translateY(30px) rotate(var(--r))}
+.calls.in .call{animation:callin .7s cubic-bezier(.2,1.3,.4,1) forwards;animation-delay:var(--d)}
+@keyframes callin{to{opacity:1;transform:rotate(var(--r))}}
+.badge6{position:absolute;top:-10px;left:6%;width:96px;height:96px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:48px;font-weight:900;box-shadow:0 18px 50px rgba(229,72,77,.5);transform:scale(0)}
+.calls.in .badge6{animation:pop2 .6s 1.4s cubic-bezier(.2,1.6,.4,1) forwards}
+@keyframes pop2{to{transform:scale(1)}}
+.solve{margin-top:28px;padding:22px 24px;border-radius:var(--r);background:linear-gradient(135deg,rgba(31,157,85,.22),rgba(79,179,173,.14));border:1px solid rgba(79,179,173,.35);font-size:19px}
+.solve b{color:#8ff0bd}
+
+/* video */
+.video .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.vphone{position:relative;width:min(340px,82vw);margin-inline:auto;aspect-ratio:9/19.3;border-radius:50px;padding:12px;background:linear-gradient(145deg,#3a2f52,#0b0814);box-shadow:0 50px 100px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.1),0 0 120px rgba(60,95,168,.45)}
+.vphone video{width:100%;height:100%;object-fit:cover;border-radius:40px;background:#000}
+.vring{position:absolute;inset:-26px;border-radius:70px;border:1px solid rgba(246,221,146,.25);animation:ring 4s ease-in-out infinite}
+.vring.r2{inset:-52px;border-radius:90px;opacity:.5;animation-delay:1s}
+@keyframes ring{50%{transform:scale(1.03);opacity:.25}}
+.play{position:absolute;inset:0;margin:auto;width:92px;height:92px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold1),var(--gold3));box-shadow:0 0 0 14px rgba(246,221,146,.18),0 20px 50px rgba(0,0,0,.5);transition:transform .25s,opacity .3s;z-index:4}
+.play:hover{transform:scale(1.08)}
+.play svg{width:34px;height:34px;margin-inline-start:-4px}
+.vphone.playing .play{opacity:0;pointer-events:none}
+.ticks{list-style:none;margin-top:30px;display:grid;gap:14px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;font-size:18px}
+.ticks li::before{content:"✓";flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#16264a;background:linear-gradient(135deg,var(--gold1),var(--gold2))}
+
+/* features bento */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:56px}
+.card{position:relative;border-radius:var(--r);padding:30px;background:var(--card);border:1px solid var(--line);overflow:hidden;isolation:isolate;transition:transform .35s,border-color .35s}
+.card::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(150,180,230,.22),transparent 45%);opacity:0;transition:opacity .35s}
+.card:hover{transform:translateY(-6px);border-color:rgba(246,221,146,.35)}
+.card:hover::before{opacity:1}
+.card .ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:28px;margin-bottom:20px;background:linear-gradient(135deg,rgba(150,180,230,.35),rgba(60,100,175,.35));border:1px solid rgba(255,255,255,.15)}
+.card h3{font-size:24px;font-weight:800;line-height:1.2;margin-bottom:10px}
+.card p{color:var(--muted);font-size:16.5px}
+.s2{grid-column:span 2}.s3{grid-column:span 3}.s4{grid-column:span 4}
+.card.hero-card{background:linear-gradient(135deg,rgba(60,95,168,.35),rgba(79,179,173,.18));display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}
+.mini{border-radius:20px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.35);border:4px solid #0f1a33;max-height:300px}
+.mini img{width:100%}
+.flow{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.flow div{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.07);font-weight:600;font-size:15px}
+.flow em{font-style:normal;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none;font-size:14px;font-weight:900;background:var(--gold2);color:#2a1a05}
+
+/* live demo calendar */
+.live{position:relative;border-radius:22px;padding:18px;background:#f6f1fd;color:#2a1d40;box-shadow:0 24px 50px rgba(0,0,0,.4);min-height:330px;overflow:hidden}
+.live-h{display:flex;align-items:center;gap:8px;font-weight:800;margin-bottom:12px}
+.live-h small{margin-inline-start:auto;font-weight:600;color:#7a6c94;font-variant-numeric:tabular-nums}
+.rec{width:9px;height:9px;border-radius:50%;background:#e5484d;animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.2}}
+.slot{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:14px;margin-bottom:8px;background:#e6dcf6;border:2px solid transparent;font-weight:600;font-size:15px;transition:all .5s}
+.slot time{font-weight:800;color:#6b3fd1;font-variant-numeric:tabular-nums}
+.slot span{transition:opacity .3s}
+.slot.cancel{background:#fff;border:2px dashed #e5484d;color:#e5484d;animation:shake .5s}
+.slot.offer{background:#fff8e1;border:2px dashed #c58f2c;color:#8a5a00}
+.slot.filled{background:#d4f5e2;border-color:#1f9d55;color:#0d5c31;box-shadow:0 0 0 6px rgba(31,157,85,.15)}
+@keyframes shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.bubble{z-index:3;position:absolute;top:44%;left:-10px;padding:10px 14px;border-radius:14px;background:#6b3fd1;color:#fff;font-weight:700;font-size:14px;box-shadow:0 12px 26px rgba(60,95,168,.45);opacity:0;transform:translateX(-30px) scale(.8);transition:all .5s cubic-bezier(.2,1.4,.4,1)}
+.bubble.on{opacity:1;transform:none;left:14px}
+.toast{position:absolute;inset-inline:14px;bottom:-120px;padding:14px;border-radius:16px;background:#16264a;color:#fff;font-size:14px;box-shadow:0 -10px 30px rgba(0,0,0,.3);transition:bottom .6s cubic-bezier(.2,1.2,.4,1)}
+.toast b{display:block;font-size:16px;color:var(--gold1)}
+.toast .okb{display:inline-block;margin-top:8px;padding:7px 14px;border-radius:999px;background:#1f9d55;font-weight:800;animation:breathe2 1.2s infinite}
+.toast.on{bottom:14px}
+@keyframes breathe2{50%{transform:scale(1.06)}}
+.cal{display:grid;grid-template-columns:46px 1fr;gap:6px}
+.cal-times{display:grid;grid-template-rows:repeat(4,1fr);padding-top:26px;font-size:11px;font-weight:700;color:#8a7da3}
+.cal-days{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.day{position:relative;height:260px;margin-top:26px;border-radius:12px;background:repeating-linear-gradient(#ece4f8 0 64px,#e2d7f3 64px 65px)}
+.day b{position:absolute;top:-24px;inset-inline:0;text-align:center;font-size:13px}
+.day.today{background:repeating-linear-gradient(#e3f1e8 0 64px,#d3e8da 64px 65px)}
+.day.today b{color:#1f9d55}
+.ev{position:absolute;inset-inline:4px;border-radius:10px;padding:6px 7px;font-style:normal;font-size:12px;font-weight:800;line-height:1.2;overflow:hidden;box-shadow:0 2px 6px rgba(42,29,64,.12)}
+.ev small{display:block;font-weight:500;font-size:10.5px;opacity:.8}
+.ok-ev small{font-size:10.5px;font-weight:700;opacity:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* הירוק נכנס בדיוק למשבצת שהתפנתה — אותו מיקום ואותו גודל כמו התור שבוטל */
+#evNew{top:25%!important;height:25%!important;inset-inline:4px}
+.v1{background:#d8c6f0;color:#3d2470}.v2{background:#c9e7e4;color:#155a55}.v3{background:#f1d6e6;color:#6d2350}
+.gone-ev{transition:opacity .5s,transform .5s}
+.gone-ev.flash{animation:evflash .45s 4;background:#fff;color:#e5484d;outline:2px dashed #e5484d;outline-offset:-2px}
+@keyframes evflash{50%{background:#ffe1e2}}
+.gone-ev.off{opacity:0;transform:scale(.85)}
+.stamp{position:absolute;inset:0;display:grid;place-items:center;font-style:normal;font-size:16px;font-weight:900;color:#e5484d;letter-spacing:1px;opacity:0;transform:rotate(-12deg) scale(1.6);transition:all .3s cubic-bezier(.2,1.4,.4,1)}
+.gone-ev.flash .stamp{opacity:1;transform:rotate(-12deg)}
+.gone-ev.flash small,.gone-ev.flash{text-decoration:line-through}
+.ok-ev{z-index:2;padding:6px 7px;font-size:12px;overflow:hidden;background:#1f9d55;color:#fff;opacity:0;transform:scale(.3);transition:opacity .3s,transform .55s cubic-bezier(.2,1.6,.4,1)}
+.ok-ev.on{opacity:1;transform:none;box-shadow:0 0 0 0 rgba(31,157,85,.6);animation:okring 1.4s .3s 2}
+@keyframes okring{to{box-shadow:0 0 0 16px rgba(31,157,85,0)}}
+.ico svg{width:30px;height:30px}
+.g b svg{width:38px;height:38px}
+
+/* showcase */
+.tabs{display:inline-flex;gap:6px;padding:6px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid var(--line);margin-top:36px}
+.tabs button{padding:12px 24px;border-radius:999px;font-weight:800;color:var(--muted);transition:all .3s}
+.tabs button.on{background:linear-gradient(135deg,var(--lilac),var(--violet));color:#fff;box-shadow:0 8px 24px rgba(60,95,168,.45)}
+.show{display:grid;grid-template-columns:1fr 330px 1fr;gap:40px;align-items:center;margin-top:50px}
+.show .phone{position:relative;width:100%;margin:auto}
+.show .screen img{transition:opacity .45s,transform .6s}
+.show .screen img.fade{opacity:0;transform:scale(1.04)}
+.steps{display:grid;gap:14px}
+.step{padding:18px 20px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.03);cursor:pointer;transition:all .3s;text-align:start;width:100%}
+.step b{display:block;font-size:18px;margin-bottom:4px}
+.step span{color:var(--muted);font-size:15px}
+.step.on{background:rgba(255,255,255,.1);border-color:rgba(246,221,146,.45);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.step .bar{display:block;height:3px;border-radius:3px;background:rgba(255,255,255,.12);margin-top:12px;overflow:hidden}
+.step .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold3),var(--gold1))}
+.step.on .bar i{animation:fill 4.5s linear forwards}
+@keyframes fill{to{width:100%}}
+
+/* calendar wide */
+.wide{margin-top:60px;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 90px rgba(0,0,0,.5);position:relative;max-height:520px}
+.wide img{width:100%}
+.wide::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(transparent,var(--bg0))}
+.wide figcaption{position:absolute;bottom:26px;inset-inline:0;text-align:center;z-index:2;font-size:clamp(20px,2.6vw,30px);font-weight:900}
+
+/* kosher phone */
+.kosher .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.kosher .sub b{color:var(--gold1)}
+.kphone-wrap{position:relative;display:grid;justify-items:center}
+.kphone{width:230px;border-radius:34px;padding:18px 16px 22px;background:linear-gradient(160deg,#3b3448,#15111d);box-shadow:0 40px 80px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.1)}
+.kphone.ringing{animation:ringshake .9s infinite}
+@keyframes ringshake{0%,50%,100%{transform:rotate(0)}10%,30%{transform:rotate(-4deg)}20%,40%{transform:rotate(4deg)}}
+.kscreen{height:150px;border-radius:12px;background:#9fc7a1;color:#13261a;padding:12px;font-family:'Courier New',monospace;font-weight:700;font-size:14px;line-height:1.35;box-shadow:inset 0 2px 8px rgba(0,0,0,.35);overflow:hidden;direction:rtl}
+.kring{font-size:16px;margin-bottom:6px}
+.ksay{min-height:4em}
+.kpad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.kpad span{height:40px;border-radius:12px;display:grid;place-items:center;font-weight:800;font-size:18px;background:linear-gradient(#4a4357,#2b2535);box-shadow:0 3px 0 #0e0b14;transition:all .15s}
+.kpad span.press{transform:translateY(3px);box-shadow:none;background:var(--gold2);color:#2a1a05}
+.kres{margin-top:22px;padding:14px 22px;border-radius:16px;background:#d4f5e2;color:#0d5c31;font-weight:800;font-size:17px;box-shadow:0 14px 34px rgba(0,0,0,.35);opacity:0;transform:translateY(16px) scale(.9);transition:all .5s cubic-bezier(.2,1.4,.4,1)}
+.kres.on{opacity:1;transform:none}
+
+/* try the demo */
+.try-grid{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center;margin-top:50px;justify-content:center}
+.tphone{width:360px;aspect-ratio:9/19;border-radius:52px;padding:13px;background:linear-gradient(145deg,#3a2f52,#0b0814);box-shadow:0 50px 100px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.1),0 0 120px rgba(70,110,190,.4)}
+.tphone .screen{border-radius:40px;background:#efe8f8}
+.tphone iframe{width:100%;height:100%;border:0;display:block;background:#efe8f8}
+.tcover{position:absolute;inset:0;display:flex;flex-direction:column;gap:16px;align-items:center;justify-content:center;background:linear-gradient(rgba(29,16,54,.55),rgba(29,16,54,.85)),url(c01_home.jpg) top center/cover;color:#fff;font-size:18px;transition:opacity .4s}
+.tcover .play{position:relative;inset:auto;margin:0;animation:breathe 2.2s ease-in-out infinite}
+.tcover.gone{opacity:0;pointer-events:none}
+.try-side{display:grid;gap:14px;max-width:420px}
+.tip{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card);border:1px solid var(--line);font-size:17px}
+.tip em{font-style:normal;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;flex:none;font-weight:900;background:linear-gradient(135deg,var(--gold1),var(--gold2));color:#2a1a05}
+.tip b{color:var(--gold1)}
+.owner-hint{position:absolute;z-index:4;top:46px;inset-inline:12px;padding:12px 14px;border-radius:16px;font-size:13.5px;line-height:1.45;color:#fff;
+  background:linear-gradient(135deg,rgba(63,140,255,.95),rgba(77,107,255,.95));box-shadow:0 12px 30px rgba(0,0,0,.35);animation:tipin .5s both}
+.owner-hint b{color:#fff;text-decoration:underline}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:6px}
+.mode{padding:16px;border-radius:18px;text-align:start;border:1px solid var(--line);background:rgba(255,255,255,.04);transition:all .3s}
+.mode b{display:block;font-size:17px;margin-bottom:2px}
+.mode span{font-size:13.5px;color:var(--muted)}
+.mode.on{background:linear-gradient(135deg,rgba(150,180,230,.35),rgba(60,95,168,.35));border-color:rgba(246,221,146,.5);box-shadow:0 12px 30px rgba(60,95,168,.35)}
+.tips{display:grid;gap:12px}
+.tips[hidden],.owner-hint[hidden]{display:none}
+.tips .tip{animation:tipin .5s both}
+.tips .tip:nth-child(2){animation-delay:.08s}.tips .tip:nth-child(3){animation-delay:.16s}.tips .tip:nth-child(4){animation-delay:.24s}
+@keyframes tipin{from{opacity:0;transform:translateX(-20px)}}
+.try-side .btn{margin-top:8px}
+.try-side small{color:var(--muted)}
+@media (max-width:980px){.kosher .wrap,.try-grid{grid-template-columns:1fr}.tphone{width:min(340px,86vw);margin:auto}.try-side{margin:auto}}
+
+/* what you get + how */
+.get{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.g{padding:28px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);transition:transform .3s,border-color .3s}
+.g:hover{transform:translateY(-5px);border-color:rgba(246,221,146,.35)}
+.g b{font-size:34px;display:block;margin-bottom:12px}
+.g h3{font-size:21px;font-weight:800;margin-bottom:6px}
+.g p{color:var(--muted);font-size:16px}
+.how{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px;counter-reset:s;position:relative}
+.how::before{content:"";position:absolute;top:38px;inset-inline:16%;height:2px;background:linear-gradient(90deg,transparent,var(--gold2),transparent);opacity:.5}
+.how li{text-align:center;position:relative}
+.how em{font-style:normal;width:76px;height:76px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;font-size:32px;font-weight:900;color:#2a1a05;background:radial-gradient(circle at 30% 25%,var(--gold1),var(--gold2) 55%,var(--gold3));box-shadow:0 0 0 10px rgba(246,221,146,.1),0 16px 40px rgba(226,181,82,.35)}
+.how h3{font-size:23px;font-weight:800;margin-bottom:8px}
+.how p{color:var(--muted);font-size:16.5px;max-width:300px;margin:auto}
+@media (max-width:980px){.get{grid-template-columns:1fr 1fr}.how{grid-template-columns:1fr;gap:34px}.how::before{display:none}}
+@media (max-width:560px){
+  .get{grid-template-columns:1fr}
+  /* היומן החי: בטלפון שני ימים, כדי שהשמות לא ייחתכו */
+  .cal-days{grid-template-columns:1fr 1fr}
+  .cal-days .day:last-child{display:none}
+  .live{padding:14px;min-height:0}
+  .card.hero-card{padding:18px}
+  .modes{grid-template-columns:1fr}
+  .tphone{width:min(320px,84vw)}
+  .kphone{width:210px}
+  h2{word-break:break-word;font-size:30px;letter-spacing:-.5px}
+  .final h2{font-size:36px}
+  .card h3{font-size:21px}
+  .wrap{padding-inline:18px}
+  .brandline{letter-spacing:-1px}
+  .rot{min-height:3.6em}
+  .contacts .btn{width:100%;font-size:17px;padding:16px 18px;white-space:normal}
+  .marquee{padding:12px 0}
+}
+
+/* about */
+.about .box{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;padding:clamp(28px,5vw,60px);border-radius:32px;background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid var(--line)}
+.avatar{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;font-size:64px;font-weight:900;color:#2a1a05;background:radial-gradient(circle at 30% 25%,var(--gold1),var(--gold2) 55%,var(--gold3));box-shadow:0 0 0 10px rgba(246,221,146,.12),0 30px 60px rgba(0,0,0,.4)}
+.about p{color:var(--muted);font-size:18px;margin-top:14px}
+.about p b{color:#fff}
+
+/* faq */
+.faq{max-width:820px;margin:50px auto 0;display:grid;gap:12px}
+details{border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.04);transition:background .3s}
+details[open]{background:rgba(255,255,255,.08)}
+summary{list-style:none;cursor:pointer;padding:22px 24px;font-weight:800;font-size:18px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;line-height:1;color:var(--gold1);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 24px 22px;color:var(--muted);font-size:17px}
+
+/* final */
+.final{text-align:center;overflow:hidden}
+.final .glow{position:absolute;inset:auto 0 -40% 0;height:80%;background:radial-gradient(closest-side,rgba(226,181,82,.25),transparent);pointer-events:none}
+.final h2{font-size:clamp(40px,6.5vw,84px)}
+.contacts{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:40px}
+.contacts .btn{font-size:19px;padding:18px 30px}
+.btn-white{background:#fff;color:#16264a;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.btn-white:hover{transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#05351a;box-shadow:0 10px 30px rgba(37,211,102,.35)}
+.btn-wa:hover{transform:translateY(-2px)}
+footer{border-top:1px solid var(--line);padding:30px 0 100px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.fab{position:fixed;bottom:22px;left:22px;z-index:60;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#25d366;box-shadow:0 12px 30px rgba(37,211,102,.5);transform:scale(0);transition:transform .4s cubic-bezier(.2,1.5,.4,1)}
+.fab.show{transform:scale(1)}
+.fab svg{width:32px;height:32px}
+.fab::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:fabring 2.4s infinite}
+@keyframes fabring{to{inset:-16px;opacity:0}}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .links{display:none}
+  .hero .wrap,.problem .wrap,.video .wrap{grid-template-columns:1fr}
+  .hero{padding-top:100px}
+  .stage{height:540px;max-width:440px;margin:0 auto;width:100%}
+  .p1{right:2%;width:236px}.p2{left:0;width:206px}
+  .bento{grid-template-columns:1fr 1fr}
+  .s2,.s3,.s4{grid-column:span 2}
+  .card.hero-card{grid-template-columns:1fr}
+  .show{grid-template-columns:1fr;max-width:420px;margin-inline:auto}
+  .show .phone{width:280px;order:-1}
+  .about .box{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .video .copy{order:-1}
+}
+@media (max-width:560px){
+  .nav .btn span{display:none}
+  .nav .btn{padding:10px 14px}
+  .brand{font-size:19px}
+  .stage{height:470px}
+  .p1{width:206px;right:0}.p2{width:178px;top:110px}
+  .chip{font-size:13px;padding:10px 12px}
+  .chip .ic{width:28px;height:28px;font-size:15px}
+  .c2{right:-2%}
+  .cta .btn{flex:1 1 100%}
+  .bento{grid-template-columns:1fr}
+  .s2,.s3,.s4{grid-column:auto}
+  .card{padding:24px}
+  .calls{height:380px}
+  .badge6{width:76px;height:76px;font-size:38px}
+  .wide{max-height:360px}
+  .fab{bottom:16px;left:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ================================================================
+   עיצוב "הייטק, יוקרתי ונקי" (גרסה 5 שאיילת בחרה): כחול-לילה, זוהר
+   כחול-סגול, כרטיסי זכוכית, טלפון לבן עם כרטיסים צפים ופס יכולות למטה.
+   ================================================================ */
+:root{
+  --bg0:#0b1030; --bg1:#141b4a; --ink:#f4f6ff; --muted:#b9c1e6; --line:rgba(255,255,255,.12);
+  /* הצבעים של גרסה 5 בהדמיה: סגול, כחול ותכלת על כחול-לילה */
+  --card:rgba(255,255,255,.06); --g1:#3fd0ff; --g2:#6f8cff; --g3:#a58bff;
+  --grad:linear-gradient(100deg,var(--g1),var(--g2) 50%,var(--g3));
+}
+body{background:var(--bg0)}
+/* כמו ההדמיה השמאלית העליונה: כחול-לילה עמוק, ואור כחול-תכלת שזורם, עם נגיעת לבנדר */
+.sky{background:radial-gradient(700px 500px at 25% 30%,rgba(30,107,255,.45),transparent 60%),radial-gradient(800px 600px at 90% 0%,rgba(63,208,255,.22),transparent 60%),radial-gradient(600px 400px at 60% 95%,rgba(165,139,255,.2),transparent 60%),linear-gradient(180deg,#071234,#050b24 75%);animation:none;background-size:auto}
+.b1{background:#1e6bff;opacity:.35}.b2{background:#3fd0ff;opacity:.2}.b3{background:#a58bff;opacity:.14}
+.stream{fill:none;stroke-linecap:round}
+/* ביצועים: בלי טשטוש חי (blur) — הוא זה שגרם לכיתוב להיכנס "תקוע" ואיטי, בעיקר בטלפון */
+.blob,#stars,.spot{display:none!important}
+.beams{filter:none}
+.rot .w{filter:none!important;transition:opacity .45s,transform .45s cubic-bezier(.2,1.2,.4,1)}
+.rot .w.out{filter:none!important}
+.reveal{transition-duration:.6s}
+.fc{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.card,.g,.tip,.mode,details{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.stream.s1,.stream.s2,.stream.s3{will-change:stroke-dashoffset}
+@media (max-width:980px){
+  .card,.g,.tip,.mode,details,.fc,.nav .wrap,.stats{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .card,.g,.tip,.mode,details{background:rgba(20,30,70,.72)}
+  .fc{background:linear-gradient(160deg,rgba(60,90,170,.85),rgba(30,45,110,.85))}
+  .nav .wrap{background:rgba(14,22,60,.92)}
+  #stars{display:none}
+}
+.stream.s1{stroke:#3fd0ff;stroke-width:3;stroke-dasharray:420 1600;animation:flow 9s linear infinite}
+.stream.s2{stroke:#6f8cff;stroke-width:2;stroke-dasharray:300 1400;animation:flow 12s linear infinite reverse}
+.stream.s3{stroke:#a58bff;stroke-width:1.6;stroke-dasharray:240 1200;animation:flow 15s linear infinite}
+.stream.base{stroke:url(#wv3);stroke-width:2;stroke-dasharray:none;animation:none;opacity:.55}
+@keyframes flow{to{stroke-dashoffset:-2000}}
+.beams{position:absolute;top:0;inset-inline-start:0;width:46%;height:60%;pointer-events:none;z-index:0;opacity:.55;
+  background:repeating-linear-gradient(90deg,transparent 0 38px,rgba(63,208,255,.18) 38px 40px,transparent 40px 70px,rgba(111,140,255,.12) 70px 71px);
+  -webkit-mask:linear-gradient(180deg,#000,transparent);mask:linear-gradient(180deg,#000,transparent);filter:blur(1px);animation:beam 6s ease-in-out infinite alternate}
+@keyframes beam{to{opacity:.25}}
+/* לוח היומן מזכוכית מאחורי הטלפון */
+.glass-back,.float{display:none!important}
+.dash{position:absolute;z-index:1;top:6%;inset-inline-start:-8%;width:118%;height:74%;border-radius:22px;padding:12px;
+  background:linear-gradient(150deg,rgba(255,255,255,.16),rgba(255,255,255,.05));border:1px solid rgba(160,210,255,.35);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 60px rgba(63,208,255,.18),inset 0 1px 0 rgba(255,255,255,.3);
+  transform:perspective(1400px) rotateY(18deg) rotateX(4deg);transform-origin:left center;color:#e9f2ff;font-size:11px}
+.dash-top{display:flex;align-items:center;gap:10px;padding:4px 6px 10px;border-bottom:1px solid rgba(255,255,255,.12)}
+.dash-top .dl{font-weight:800;font-size:12px}.dash-top .dd{opacity:.7}
+.dots3{margin-inline-start:auto;display:flex;gap:4px}.dots3 i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4)}
+.dash-body{display:flex;gap:10px;height:calc(100% - 34px);padding-top:10px}
+.dash-side{display:flex;flex-direction:column;gap:10px;padding:6px}
+.dash-side i{width:22px;height:22px;border-radius:7px;background:rgba(255,255,255,.14)}
+.dash-side i.on{background:var(--grad)}
+.dash-grid{flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto 1fr;gap:8px}
+.dh{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-weight:700;opacity:.8;text-align:center}
+.dcol{position:relative;border-radius:12px;background:repeating-linear-gradient(rgba(255,255,255,.05) 0 34px,rgba(255,255,255,.1) 34px 35px)}
+.ap{position:absolute;inset-inline:4px;border-radius:9px;padding:5px 6px 5px 4px;font-weight:700;font-size:10.5px;line-height:1.2;display:flex;flex-wrap:wrap;align-content:flex-start;gap:0 5px;overflow:hidden;color:#16203f}
+.ap em{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.85);flex:none;box-shadow:inset 0 -4px 6px rgba(0,0,0,.12)}
+.ap small{width:100%;font-weight:500;font-size:9.5px;opacity:.75}
+.a1{background:linear-gradient(135deg,#c8dcff,#a9c4ff)}.a2{background:linear-gradient(135deg,#ffd6ea,#f4b9da)}
+.a3{background:linear-gradient(135deg,#d6f6ee,#a9e8d8)}.a4{background:linear-gradient(135deg,#e6dcff,#cbbcff)}
+/* טלפון תלת-ממדי: עובי בצד, מסגרת מתכת, הטיה במרחב */
+.stage{perspective:1600px}
+.stage .tilt{transform-style:preserve-3d}
+.hphone{width:min(310px,70vw);transform-style:preserve-3d;transform:rotateY(-24deg) rotateX(8deg) rotateZ(-3deg);
+  background:linear-gradient(120deg,#e9edf7,#aeb6cc 30%,#f7f9ff 50%,#9aa3bd 75%,#dfe4f0);padding:11px;
+  box-shadow:-30px 40px 80px rgba(0,0,0,.6),0 0 90px rgba(63,208,255,.35)}
+.hphone .edge{position:absolute;top:18px;bottom:18px;right:-16px;width:18px;border-radius:0 14px 14px 0;
+  background:linear-gradient(90deg,#8e97b2,#d7dcea 40%,#7d869f);transform:rotateY(70deg);transform-origin:left center;box-shadow:inset 0 0 6px rgba(0,0,0,.35)}
+.hphone .btns{position:absolute;right:-5px;top:22%;width:5px;height:60px;border-radius:3px;background:#9aa3bd;box-shadow:0 80px 0 #9aa3bd}
+.hphone .screen{box-shadow:inset 0 0 0 1px rgba(0,0,0,.4)}
+.hphone::after{content:"";position:absolute;inset:11px;border-radius:40px;pointer-events:none;z-index:5;
+  background:linear-gradient(115deg,rgba(255,255,255,.35) 0%,rgba(255,255,255,0) 28%,rgba(255,255,255,0) 70%,rgba(255,255,255,.12) 100%)}
+.hphone.playing::after{opacity:.4}
+/* מניפת זכוכית: הכרטיסים נפתחים מאחורי הטלפון לצדדים, והטלפון במרכז */
+.dash,.float{display:none!important}
+.stage{padding:110px 0 40px}
+.hphone{transform:rotateY(-14deg) rotateX(6deg)}
+.fan{transform:translateZ(-120px);transform-style:preserve-3d;position:absolute;z-index:1;left:50%;bottom:34%;width:0;height:0}
+.fc{position:absolute;bottom:0;left:-105px;width:210px;height:250px;padding:16px;border-radius:22px;transform-origin:50% 150%;
+  background:linear-gradient(160deg,rgba(255,255,255,.24),rgba(255,255,255,.07));border:1px solid rgba(160,210,255,.5);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 24px 50px rgba(0,0,0,.4),0 0 40px rgba(63,208,255,.18),inset 0 1px 0 rgba(255,255,255,.35);
+  color:#fff;font-size:12.5px;opacity:0;animation:fanout 1.1s cubic-bezier(.2,1.1,.3,1) forwards}
+.fc b{display:block;font-size:15px;margin-bottom:6px}
+.fc span{display:block;opacity:.85}
+.fc em{display:inline-block;margin-top:8px;padding:5px 10px;border-radius:999px;background:#1f9d55;font-style:normal;font-weight:800;font-size:12px}
+.fc .fr{display:flex;gap:6px;margin-top:7px}.fc .fr i{height:16px;border-radius:6px;flex:1}
+.fc .fr i:last-child{flex:.6}
+.fc .ph{display:flex;gap:6px;margin-top:10px}.fc .ph i{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#ffd6ea,#c8dcff)}
+.fc .bars{height:56px}
+.fc{transform-origin:50% 100%}
+/* הכרטיסים יוצאים מהטלפון, נשארים כמה שניות ונכנסים חזרה — שוב ושוב.
+   גדלים שונים, ורובם יוצאים לצד הרחוק מהטקסט, כדי שלא יהיה צפוף. */
+.fc{animation:fanloop 9s cubic-bezier(.3,1.1,.3,1) infinite}
+/* לוחות דקים וגבוהים — כמעט בגובה הטלפון — שנפתחים כמו מניפה מתחתית הטלפון */
+.fan{bottom:6%}
+.fc{width:104px;height:480px;left:-52px;padding:14px 10px;border-radius:20px;transform-origin:50% 100%;text-align:center;font-size:11px}
+.fc b{font-size:12.5px;line-height:1.25}
+.fc .fr{flex-direction:column}.fc .fr i{height:12px}
+.fc .ph{flex-direction:column;align-items:center}.fc .ph i{width:44px;height:44px}
+.fc .bars{justify-content:center;height:90px}
+.fc em{font-size:10.5px;padding:4px 8px}
+/* שלושה לוחות, כולם לאותו צד */
+.fc{width:136px;left:-68px;padding:14px 10px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.fc span{font-size:11px;line-height:1.3}
+.fc .big{font-size:20px;font-weight:900;color:#bfe6ff}
+.fc .kv{display:block;width:100%;padding:6px;border-radius:10px;background:rgba(255,255,255,.1)}
+.fc .kv b{font-size:14px;margin:0}
+.fc .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#ffd6ea,#c8dcff);box-shadow:0 0 0 3px rgba(255,255,255,.35)}
+.fc .nm{font-weight:800;font-size:13px}
+.fc .note{padding:6px;border-radius:10px;background:rgba(255,255,255,.12);text-align:start}
+.fc .ph{flex-direction:row}
+.fc .ph i{width:40px;height:40px}
+.fc .st{display:block;width:100%;padding:7px 6px;border-radius:10px;font-weight:700;color:#16203f}
+.fc .st.bad{background:#ffd7da;color:#b4232a;text-decoration:line-through}
+.fc .st.mid{background:#fff2c8;color:#7a5200}
+.fc .st.good{background:#c9f2d9;color:#0d5c31}
+.fc .arr{opacity:.7;font-size:14px}
+.fc4{display:none}
+.fc1{--x:-120px;--y:0;--r:-40deg;animation-delay:.3s;height:470px}
+.fc2{--x:-85px;--y:0;--r:-27deg;animation-delay:.45s;height:500px}
+.fc3{--x:-50px;--y:0;--r:-14deg;animation-delay:.6s;height:520px}
+@keyframes fanloop{
+  0%{opacity:0;transform:translate(0,0) rotate(0) scale(.6)}
+  12%{opacity:1;transform:translate(var(--x),var(--y)) rotate(var(--r)) scale(1)}
+  72%{opacity:1;transform:translate(var(--x),var(--y)) rotate(var(--r)) scale(1)}
+  86%,100%{opacity:0;transform:translate(0,0) rotate(0) scale(.6)}}
+.hero .wrap{gap:110px}
+.stage{justify-self:start;width:100%;max-width:520px}
+.hphone{width:min(285px,68vw)}
+.fc{will-change:transform}
+@media (max-width:560px){
+  .stage{padding:80px 0 20px}
+  .fc{width:150px;height:200px;left:-75px;padding:12px;font-size:11px}
+  .fc b{font-size:13px}
+  .fc{width:104px;left:-52px;padding:9px 6px;gap:4px}
+  .fc span{font-size:9.5px}.fc b{font-size:11px}.fc .big{font-size:15px}
+  .fc .av{width:34px;height:34px}.fc .ph i{width:28px;height:28px}
+  /* בטלפון: מניפה צרה יותר, כדי שהלוחות לא ייחתכו בקצה המסך */
+  .fc{width:96px;left:-48px}
+  .fc1{height:280px;--x:-6px;--r:-20deg}.fc2{height:295px;--x:-2px;--r:-12deg}.fc3{height:310px;--x:2px;--r:-4deg}
+  .hphone{width:54vw!important;transform:translateX(18%) rotateY(-14deg) rotateX(6deg)!important}
+  .fan{left:46%}
+}
+/* על המסך — האתר האמיתי של חגית (מנטה ולילך), לא מסך מצויר */
+.hphone .app{display:none}
+.hphone .screen{background:#e6eef0}
+/* הזכוכיות "יוצאות" מתוך הטלפון: לפניו, בולטות לצדדים, בעומק שונה */
+.dash{z-index:6;top:40%;left:-34%;right:auto;width:74%;height:40%;padding:10px;
+  transform:translateZ(90px) rotateY(-20deg) rotateX(6deg);transform-origin:center;animation:popout 7s ease-in-out infinite}
+.dash .dash-side{display:none}
+.dash .ap{font-size:9.5px}.dash .ap small{font-size:8.5px}
+@keyframes popout{50%{translate:-8px -10px}}
+.float{display:block!important;z-index:7;background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(255,255,255,.07));border-color:rgba(160,210,255,.45);box-shadow:0 24px 50px rgba(0,0,0,.45),0 0 40px rgba(63,208,255,.2)}
+.float{width:auto;max-width:170px}
+/* "מציצים" מהצד הימני של הטלפון: רובם בחוץ, רק קצה קטן חופף לטלפון */
+.float.f1{top:14%;right:calc(50% - min(155px,35vw) - 120px);left:auto;inset-inline-end:auto;inset-inline-start:auto;transform:translateZ(120px) rotateY(-20deg)}
+.float.f2{bottom:12%;right:calc(50% - min(155px,35vw) - 105px);left:auto;inset-inline-start:auto;inset-inline-end:auto;transform:translateZ(100px) rotateY(-20deg)}
+.dash{left:calc(50% - min(155px,35vw) - 150px);width:min(300px,72%)}
+.bars i{background:linear-gradient(180deg,#3fd0ff,#6f8cff)}
+@media (max-width:560px){.dash{left:-10%;width:80%;top:52%}.float.f1{right:-4%}.float.f2{right:-2%}.hphone{transform:rotateY(-18deg) rotateX(6deg)}}
+.stats{background:transparent;border:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+.stat i{background:transparent;border:1px solid rgba(160,210,255,.35);border-radius:50%}
+.stat i svg{stroke:#bfe6ff}
+/* גלים רכים ברקע ה-hero, כמו בהדמיה */
+.waves{position:absolute;inset:0;z-index:0;pointer-events:none;width:100%;height:100%}
+.hero .wrap{position:relative;z-index:1}
+/* זכוכית מאחורי הטלפון */
+.glass-back{position:absolute;z-index:0;border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 30px 70px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.25)}
+.gb1{width:62%;height:70%;top:14%;inset-inline-start:2%;transform:rotate(-8deg);padding:22px 18px;animation:float2 9s ease-in-out infinite}
+.gb2{width:44%;height:30%;top:2%;inset-inline-end:4%;transform:rotate(6deg);animation:float1 8s ease-in-out infinite}
+.gb1 .row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.gb1 .row i{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.35);flex:none}
+.gb1 .row b{height:12px;border-radius:6px;flex:1;background:linear-gradient(90deg,rgba(120,170,255,.75),rgba(140,140,255,.45))}
+.gb1 .row:nth-child(2) b{background:linear-gradient(90deg,rgba(255,170,210,.7),rgba(255,200,230,.35));flex:.7}
+.gb1 .row:nth-child(3) b{background:linear-gradient(90deg,rgba(130,230,200,.7),rgba(170,240,220,.35));flex:.85}
+.gb1 .row:nth-child(4) b{flex:.6}
+.gb1 .row:nth-child(5) b{background:linear-gradient(90deg,rgba(255,210,140,.7),rgba(255,230,180,.35));flex:.75}
+.gb2 .gh{display:block;margin:16px 16px 0;height:10px;width:50%;border-radius:5px;background:rgba(255,255,255,.4)}
+.gb2 .gl{display:block;margin:10px 16px 0;height:8px;width:70%;border-radius:4px;background:rgba(255,255,255,.22)}
+.hphone{z-index:3}
+.hero .btn-ghost{background:#fff;color:#0f1a40;border-color:#fff}
+.hero .btn-ghost:hover{background:#eef2ff}
+.leaves,.side-feats,.plinth,.halo,.dots{display:none!important}
+
+/* כותרות בגרדיאנט כחול-סגול במקום זהב */
+.gold,.rot .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;animation:none}
+.eyebrow{color:#9fd8ff}
+.rot::after{background:var(--g2)}
+.swash path{stroke:url(#sg5)}
+
+/* nav */
+.nav .wrap{margin-top:10px;height:64px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);max-width:calc(var(--max) + 40px)}
+.nav.solid{background:transparent;box-shadow:none;backdrop-filter:none}
+.nav.solid .wrap{background:rgba(14,20,64,.75)}
+.brand-t{display:flex;flex-direction:column;line-height:1.05}
+.brand-t small{font-size:12px;font-weight:500;color:#9fd8ff}
+.logo{background:var(--grad);box-shadow:0 6px 24px rgba(63,160,255,.5)}
+.btn-gold{color:#fff;background:var(--grad);box-shadow:0 10px 30px rgba(63,160,255,.45),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn-gold:hover{box-shadow:0 16px 40px rgba(63,160,255,.6)}
+.btn-ghost{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.04)}
+.pill{background:rgba(63,160,255,.14);border-color:rgba(111,140,255,.45);color:#d9dcff}
+.pill i{display:none}
+
+/* hero */
+.hero{padding-bottom:40px;overflow:hidden}
+html,body{overflow-x:hidden;max-width:100%}
+main>section{overflow-x:clip}
+.hero .wrap{grid-template-columns:1fr 1fr}
+.brandline{font-size:clamp(46px,6.6vw,88px)}
+.brandline .l span{color:#fff}
+.rot{font-size:clamp(34px,4.6vw,62px);font-weight:900;min-height:2.4em}
+.swash{display:block;width:min(300px,60%);height:22px;margin:-6px 0 18px}
+.lead .acc{color:#c9d2ff;font-weight:700}
+/* פס היכולות מזכוכית */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;padding:20px 10px;border-radius:24px;background:rgba(255,255,255,.06);border:1px solid var(--line);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.stat{text-align:center;padding:0 8px;border-inline-start:1px solid var(--line)}
+.stat:first-child{border:0}
+.stat i{display:grid;place-items:center;width:46px;height:46px;margin:0 auto 8px;border-radius:14px;background:linear-gradient(135deg,rgba(79,124,255,.3),rgba(111,140,255,.3))}
+.stat i svg{width:24px;height:24px;fill:none;stroke:#c9d2ff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.stat b{font-size:17px;line-height:1.2}
+.stat span{font-size:13px;display:block;margin-top:2px}
+
+/* הטלפון: לבן-כסוף, מסך אפליקציה בהיר */
+.hphone{width:min(300px,70vw);background:linear-gradient(145deg,#f4f5fb,#c9cde0 40%,#ffffff 60%,#aeb3c9);padding:10px;
+  box-shadow:0 50px 100px rgba(0,0,0,.55),0 0 120px rgba(63,160,255,.45);transform:rotate(-4deg)}
+.hphone::before{background:#0b0d18}
+.hphone .screen{background:#fff;border-radius:40px;border:4px solid #0b0d18}
+.app{position:absolute;inset:0;padding:44px 16px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;color:#1b1f3b;
+  background:radial-gradient(260px 180px at 50% 0%,#e8f4ff,transparent 70%),#fff;transition:opacity .6s}
+.hphone.playing .app{opacity:0}
+.app-status{position:absolute;top:12px;inset-inline:24px;display:flex;justify-content:space-between;font-size:11px;font-weight:700;color:#1b1f3b}
+.app-logo{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;align-content:center;background:#fff;box-shadow:0 10px 26px rgba(80,70,160,.18),0 0 0 4px #e6f2ff}
+.app-logo svg{width:36px;stroke:#6f8cff}
+.app-logo svg g{stroke:#6f8cff}
+.app-logo b{font-size:19px;line-height:1}.app-logo small{font-size:10px;color:#6b6f8f}
+.app-title{font-weight:800;font-size:17px;margin-top:4px}
+.app-sub{font-size:11px;color:#6b6f8f;margin-top:-6px}
+.app-icons{display:flex;gap:14px;font-size:10px;color:#6b6f8f}
+.app-icons span{display:flex;flex-direction:column;align-items:center;gap:3px}
+.app-icons i{font-style:normal;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#fff;box-shadow:0 4px 12px rgba(80,70,160,.15);font-size:15px}
+.app-btn{width:100%;padding:11px;border-radius:999px;text-align:center;font-weight:800;font-size:14px;color:#fff;background:var(--grad);box-shadow:0 8px 18px rgba(63,160,255,.35)}
+.app-btn em{font-style:normal;margin-inline-start:6px}
+.app-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:100%}
+.app-tiles span{padding:10px 4px;border-radius:14px;background:#eef6ff;text-align:center;font-size:16px;color:#6f8cff}
+.app-tiles small{display:block;font-size:10px;color:#4b4f6b;margin-top:2px}
+.app-foot{flex:1;width:100%;border-radius:16px;background:linear-gradient(135deg,#e8f4ff,#e3ecff)}
+.tap{bottom:30%}
+.tap .play{background:var(--grad);box-shadow:0 0 0 14px rgba(63,160,255,.2),0 20px 50px rgba(0,0,0,.4)}
+.tap .play svg{fill:#fff}
+/* כרטיסים צפים מזכוכית ליד הטלפון */
+.float{position:absolute;z-index:6;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 20px 40px rgba(0,0,0,.35);color:#fff;font-size:13px}
+.float b{display:block;font-size:22px;font-weight:900}
+.float.f1{top:8%;inset-inline-end:2%;animation:float2 6s ease-in-out infinite}
+.float.f2{bottom:16%;inset-inline-start:0;animation:float1 7s ease-in-out infinite}
+.bars{display:flex;align-items:flex-end;gap:5px;height:40px;margin-top:8px}
+.bars i{width:9px;border-radius:4px;background:var(--grad)}
+.float .bell{font-size:26px;display:block}
+
+/* כל שאר העמוד: זכוכית על כחול-לילה */
+main>section:not(.hero){background:transparent}
+.marquee{background:rgba(255,255,255,.04)}
+.track span::after{color:#9fd8ff}
+.card,.g,.tip,.mode,details{background:rgba(255,255,255,.06);border-color:var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.card:hover,.g:hover{border-color:rgba(111,140,255,.55)}
+.card.hero-card{background:linear-gradient(135deg,rgba(79,124,255,.18),rgba(111,140,255,.14))}
+.flow em,.how em,.tip em,.ticks li::before{background:var(--grad);color:#fff}
+.how em{box-shadow:0 0 0 10px rgba(63,160,255,.15),0 16px 40px rgba(63,160,255,.4)}
+.how::before{background:linear-gradient(90deg,transparent,var(--g2),transparent)}
+.g b svg{stroke:#9fd8ff}
+.tip b,.kosher .sub b{color:#bfe6ff}
+.mode.on{background:linear-gradient(135deg,rgba(79,124,255,.35),rgba(111,140,255,.35));border-color:rgba(111,140,255,.7)}
+.bubble{background:var(--g2)}
+.slot time{color:var(--g2)}
+.final .glow{background:radial-gradient(closest-side,rgba(63,160,255,.35),transparent)}
+summary::after{color:#9fd8ff}
+.kpad span.press{background:var(--g2);color:#fff}
+.tphone{box-shadow:0 50px 100px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.1),0 0 120px rgba(63,160,255,.4)}
+.fab{background:#25d366}
+/* היומן החי רחב יותר מהטקסט שלידו, כדי שהמשבצות לא יהיו צרות */
+.card.hero-card{grid-template-columns:.9fr 1.3fr}
+@media (max-width:1200px){.card.hero-card{grid-template-columns:1fr}}
+@media (max-width:980px){.hero .wrap{grid-template-columns:1fr}.float.f1{inset-inline-end:0}}
+@media (max-width:560px){
+  .stats{grid-template-columns:1fr 1fr;row-gap:18px}
+  .stat:nth-child(3){border:0}
+  .float{font-size:11px;padding:10px 12px}.float b{font-size:17px}
+  .bars{height:28px}
+}
+</style>
+</head>
+<body>
+<div class="sky"></div>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<canvas id="stars"></canvas>
+<div class="spot" id="spot"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="הכל בקליק">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M5 3l14 6.5-6 2-2 6z"/><path d="M13 11.5l6 6"/></svg></span>
+      <span class="brand-t">הכל בקליק<small>מערכת תורים לעסקי יופי</small></span>
+    </a>
+    <nav class="links">
+      <a href="#top">הסרטון</a>
+      <a href="#features">מה המערכת עושה</a>
+      <a href="#try">נסי בעצמך</a>
+      <a href="#get">מה את מקבלת</a>
+      <a href="#faq">שאלות</a>
+    </nav>
+    <a class="btn btn-gold wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg><span>בואי נדבר</span></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <svg class="waves" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="wv1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3f8cff" stop-opacity=".0"/><stop offset=".5" stop-color="#6f8cff" stop-opacity=".28"/><stop offset="1" stop-color="#6f6cff" stop-opacity=".05"/></linearGradient>
+      <linearGradient id="wv2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b5cff" stop-opacity=".25"/><stop offset="1" stop-color="#4fb8ff" stop-opacity=".05"/></linearGradient>
+    </defs>
+    <defs>
+      <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <linearGradient id="wv3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3fd0ff" stop-opacity="0"/><stop offset=".45" stop-color="#3fd0ff"/><stop offset=".8" stop-color="#6f8cff"/><stop offset="1" stop-color="#a58bff" stop-opacity="0"/></linearGradient>
+    </defs>
+    <path d="M0 720C300 640 520 860 860 760S1260 600 1440 660V900H0z" fill="url(#wv2)"/>
+    <path class="stream base" d="M-40 700C220 600 420 820 760 720S1200 520 1480 600"/>
+    <path class="stream s1" d="M-40 700C220 600 420 820 760 720S1200 520 1480 600"/>
+    <path class="stream s2" d="M-40 760C260 680 500 880 820 790S1240 600 1480 680"/>
+    <path class="stream s3" d="M-40 650C200 560 460 760 780 660S1180 470 1480 540"/>
+  </svg>
+  <div class="beams" aria-hidden="true"></div>
+  <svg class="leaves l1" viewBox="0 0 200 300" aria-hidden="true"><g fill="#6f8c6a"><path d="M100 300C95 220 80 150 40 90c40 30 70 90 66 210z"/><path d="M104 260c10-70 40-120 90-150-30 50-55 100-82 160z"/><path d="M98 200C70 160 30 140 0 140c40-10 80 10 102 52z"/><path d="M106 150c5-50 30-100 70-140-15 50-35 95-62 146z"/></g></svg>
+  <svg class="leaves l2" viewBox="0 0 200 300" aria-hidden="true"><g fill="#6f8c6a"><path d="M100 300C95 220 80 150 40 90c40 30 70 90 66 210z"/><path d="M104 260c10-70 40-120 90-150-30 50-55 100-82 160z"/><path d="M98 200C70 160 30 140 0 140c40-10 80 10 102 52z"/></g></svg>
+  <div class="wrap">
+    <aside class="side-feats" aria-label="מה המערכת נותנת">
+      <svg class="arc" viewBox="0 0 120 700" preserveAspectRatio="none" aria-hidden="true"><path d="M110 0C10 160 10 540 110 700" fill="none" stroke="url(#ag)" stroke-width="2"/><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b56a" stop-opacity="0"/><stop offset=".5" stop-color="#b8893a"/><stop offset="1" stop-color="#d9b56a" stop-opacity="0"/></linearGradient></defs></svg>
+      <div class="sf"><i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg></i><b>אתר תורים</b><span>בעיצוב העסק שלך</span></div>
+      <div class="sf"><i><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></i><b>תזכורות אוטומטיות</b><span>SMS, מייל ושיחה</span></div>
+      <div class="sf"><i><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 15.2c.7-.4 1.4-.6 2.2-.6 2.6 0 4.8 2.1 4.8 4.8"/></svg></i><b>ניהול צוות</b><span>ויומן תורים</span></div>
+      <div class="sf"><i><svg viewBox="0 0 24 24"><path d="M4 20V14M10 20V9M16 20V12M22 20V5M2 20h22"/></svg></i><b>דוחות</b><span>ותובנות לעסק</span></div>
+    </aside>
+    <div class="hero-copy">
+      <span class="pill">מערכת תורים חכמה לעסקי יופי</span>
+      <h1 class="brandline"><span class="l"><span>הכל בקליק.</span></span></h1>
+      <div class="rot" id="rot" aria-live="polite"></div>
+      <svg class="swash" viewBox="0 0 300 24" aria-hidden="true"><path d="M4 16C70 6 170 4 296 10" fill="none" stroke="url(#sg)" stroke-width="5" stroke-linecap="round"/><path d="M30 20c60-6 140-8 220-4" fill="none" stroke="url(#sg)" stroke-width="2" stroke-linecap="round" opacity=".6"/><defs><linearGradient id="sg5"><stop offset="0" stop-color="#4fb8ff"/><stop offset=".5" stop-color="#5a73ff"/><stop offset="1" stop-color="#8b5cff" stop-opacity=".2"/></linearGradient><linearGradient id="sg"><stop offset="0" stop-color="#8f6a2a"/><stop offset=".5" stop-color="#d9b56a"/><stop offset="1" stop-color="#8f6a2a" stop-opacity=".2"/></linearGradient></defs></svg>
+      <div class="dots" id="dots"></div>
+      <p class="lead"><b>מערכת אונליין לקביעת תורים לעסקי יופי,</b><br><span class="acc">שעובדת בשבילך 24/7 וממלאת שעות שהתפנו לבד.</span><br>קביעת תור, תזכורות אוטומטיות, ניהול יומן צוות ודוחות — הכל במקום אחד, פשוט ונוח.</p>
+      <div class="cta">
+        <a class="btn btn-gold wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg> אני רוצה כזה לעסק שלי</a>
+        <button class="btn btn-ghost" type="button" id="watch"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> צפי בסרטון</button>
+      </div>
+      <div class="stats">
+        <div class="stat"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><b dir="ltr" style="unicode-bidi:isolate">24/7</b><span>קביעת תור גם בלילה</span></div>
+        <div class="stat"><i><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 15.2c.7-.4 1.4-.6 2.2-.6 2.6 0 4.8 2.1 4.8 4.8"/></svg></i><b>0</b><span>טלפונים באמצע טיפול</span></div>
+        <div class="stat"><i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg></i><b>שעות שהתפנו</b><span>מתמלאות לבד</span></div>
+        <div class="stat"><i><svg viewBox="0 0 24 24"><path d="M4 20V14M10 20V9M16 20V12M22 20V5M2 20h22"/></svg></i><b>יותר לקוחות</b><span>והכנסות גבוהות</span></div>
+      </div>
+    </div>
+    <div class="stage" id="stage">
+      <div class="tilt" id="tilt">
+        <div class="fan" aria-hidden="true">
+          <div class="fc fc1"><b>📊 דוחות</b><span class="big">₪2,290</span><span>הכנסות השבוע</span><div class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:75%"></i><i style="height:100%"></i></div><span class="kv"><b>11</b>תורים</span><span class="kv"><b>₪208</b>ממוצע לתור</span></div>
+          <div class="fc fc2"><b>👩 כרטסת לקוחה</b><span class="av"></span><span class="nm">שירה לוי</span><span>12 ביקורים</span><span class="note">📝 עור רגיש — לייזר בעוצמה נמוכה</span><div class="ph"><i></i><i></i></div><span>תמונות לפני / אחרי</span></div>
+          <div class="fc fc3"><b>⏳ שעה שהתפנתה</b><span class="st bad">17:00 — מיכל ביטלה</span><span class="arr">↓</span><span class="st mid">הוצע לשירה, הבאה בתור</span><span class="arr">↓</span><span class="st good">✓ אישרה — התור נתפס</span><span>בלי טלפון אחד</span></div>
+        </div>
+        <div class="dash" aria-hidden="true">
+          <div class="dash-top"><span class="dl">הכל בקליק</span><span class="dd">יום ג׳ · 28 באוקטובר</span><span class="dots3"><i></i><i></i><i></i></span></div>
+          <div class="dash-body">
+            <div class="dash-side"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="dash-grid">
+              <div class="dh"><span>הדס</span><span>נועה</span><span>מיכל</span></div>
+              <div class="dcol"><b class="ap a1" style="top:4%;height:18%"><em></em>שירה לוי<small>10:00 · לייזר</small></b><b class="ap a3" style="top:30%;height:14%"><em></em>אורית<small>11:30 · גבות</small></b><b class="ap a2" style="top:56%;height:20%"><em></em>יעל שפירא<small>13:00 · פנים</small></b></div>
+              <div class="dcol"><b class="ap a2" style="top:10%;height:22%"><em></em>נועה אלון<small>10:30 · לייזר</small></b><b class="ap a4" style="top:44%;height:16%"><em></em>רונית כץ<small>12:30 · שעווה</small></b><b class="ap a1" style="top:70%;height:16%"><em></em>מור<small>14:30 · חוט</small></b></div>
+              <div class="dcol"><b class="ap a4" style="top:2%;height:16%"><em></em>אפרת<small>09:30 · פילינג</small></b><b class="ap a1" style="top:26%;height:22%"><em></em>הילה גרין<small>11:00 · פנים</small></b><b class="ap a3" style="top:58%;height:18%"><em></em>סיון ברק<small>13:30 · לייזר</small></b></div>
+            </div>
+          </div>
+        </div>
+        <div class="hphone" id="hphone" role="button" tabindex="0" aria-label="הפעלת הסרטון">
+          <span class="edge" aria-hidden="true"></span><span class="btns" aria-hidden="true"></span>
+          <div class="screen">
+            <img src="c01_home.jpg" alt="האתר של חגית אסתטיקה — סלון לדוגמה עם לוגו וצבעים משלו" loading="eager">
+            <div class="app" aria-hidden="true">
+              <div class="app-status"><span dir="ltr">9:41</span><span>●●● ▮</span></div>
+              <div class="app-logo"><svg viewBox="0 0 40 24"><g fill="none" stroke="#a9853f" stroke-width="1.6" stroke-linecap="round"><path d="M20 2c-4 5-4 11 0 16 4-5 4-11 0-16z"/><path d="M18 17c-5-6-11-6-15-3 4 4 9 5 15 3z"/><path d="M22 17c5-6 11-6 15-3-4 4-9 5-15 3z"/></g></svg><b>חגית</b><small>אסתטיקה</small></div>
+              <div class="app-title">קביעת תור אונליין</div>
+              <div class="app-sub">נוח • מהיר • בכל זמן</div>
+              <div class="app-icons"><span><i style="color:#25d366">●</i>וואטסאפ</span><span><i style="color:#c0763a">✆</i>שיחה</span><span><i style="color:#b8893a">✉</i>מייל</span></div>
+              <div class="app-btn">קביעת תור עכשיו <em>›</em></div>
+              <div class="app-tiles"><span>✓<small>אישור מיידי</small></span><span>◷<small>בחירת שעה</small></span><span>▦<small>בחירת תאריך</small></span></div>
+              <div class="app-foot"></div>
+            </div>
+            <video id="promo" src="promo-web.mp4" poster="poster.jpg" playsinline preload="metadata"></video>
+          </div>
+          <div class="tap"><span class="play"><svg viewBox="0 0 24 24" fill="#2a1a05"><path d="M7 4v16l13-8z"/></svg></span><span>לחצי כדי לראות איך זה עובד</span></div>
+          <button class="hctl" id="hctl" type="button" aria-label="הפסקה">❚❚</button>
+        </div>
+        <div class="plinth" aria-hidden="true"></div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#strip" aria-label="גלילה למטה"></a>
+</section>
+
+<div class="marquee" id="strip" aria-hidden="true"><div class="track">
+  <span>אסתטיקה</span><span>הסרת שיער בלייזר</span><span>ציפורניים</span><span>מספרות</span><span>גבות וריסים</span><span>טיפולי פנים</span><span>שעווה וחוט</span><span>קוסמטיקה</span>
+  <span>אסתטיקה</span><span>הסרת שיער בלייזר</span><span>ציפורניים</span><span>מספרות</span><span>גבות וריסים</span><span>טיפולי פנים</span><span>שעווה וחוט</span><span>קוסמטיקה</span>
+</div></div>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="wrap">
+    <div class="calls" id="calls">
+      <div class="badge6" id="badge6">1</div>
+      <div class="call" style="--r:-3deg;--d:.1s;top:30px;right:0"><span class="x">✕</span>שיחה שלא נענתה<time>09:12</time></div>
+      <div class="call" style="--r:2.5deg;--d:.35s;top:120px;left:0"><span class="x">✕</span>שיחה שלא נענתה<time>09:31</time></div>
+      <div class="call" style="--r:-1.5deg;--d:.6s;top:210px;right:6%"><span class="x">✕</span>שיחה שלא נענתה<time>09:47</time></div>
+      <div class="call" style="--r:3deg;--d:.85s;top:300px;left:4%"><span class="x">✕</span>שיחה שלא נענתה<time>10:05</time></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">מכירה את זה?</span>
+      <h2>את באמצע טיפול,<br>והטלפון <span class="gold">שוב מצלצל.</span></h2>
+      <p class="sub">עוד לקוחה שרוצה לקבוע, לשנות, לבטל. את רוצה לתת לכל לקוחה את מלוא תשומת הלב — אבל הטלפון לא נותן לך רגע של שקט.</p>
+      <div class="solve">עם <b>הכל בקליק</b> הלקוחות מסתדרות לבד, והטלפון שלך נשאר שקט.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">מה המערכת עושה בשבילך</span>
+      <h2>כל מה שעסק יופי צריך.<br><span class="gold">במקום אחד.</span></h2>
+    </div>
+    <div class="bento">
+      <article class="card s4 hero-card reveal">
+        <div>
+          <div class="ico">⏳</div>
+          <h3>שעה שהתפנתה — מתמלאת לבד</h3>
+          <p>מישהי ביטלה? המערכת מציעה את השעה מיד ללקוחה הבאה בתור. היא מאשרת בלחיצה, והיומן מלא שוב — בלי שהרמת טלפון.</p>
+          <div class="flow">
+            <div><em>1</em>מיכל ביטלה — התור מהבהב ונעלם מהיומן</div>
+            <div><em>2</em>השעה מוצעת מיד לבאה בתור</div>
+            <div><em>3</em>שירה אישרה בלחיצה — השעה נתפסה ✓</div>
+          </div>
+        </div>
+        <div class="live" id="live" aria-label="הדגמה: תור שבוטל ביומן מתמלא מחדש">
+          <div class="live-h"><span class="rec"></span>היומן שלך · השבוע <small id="liveClock">16:20</small></div>
+          <div class="cal">
+            <div class="cal-times"><span>16:00</span><span>17:00</span><span>18:00</span><span>19:00</span></div>
+            <div class="cal-days">
+              <div class="day"><b>ב׳</b>
+                <i class="ev v1" style="top:0;height:25%">הדס ברק<small>גבות</small></i>
+                <i class="ev v3" style="top:50%;height:25%">רונית כץ<small>לייזר ידיים</small></i>
+              </div>
+              <div class="day today"><b>ג׳</b>
+                <i class="ev v2" style="top:0;height:25%">נועה אלון<small>לייזר</small></i>
+                <i class="ev v1 gone-ev" id="evCancel" style="top:25%;height:25%">מיכל כהן<small>טיפול פנים</small><em class="stamp">בוטל</em></i>
+                <i class="ev ok-ev" id="evNew" style="top:25%;height:25%">שירה לוי ✓</i>
+                <i class="ev v3" style="top:62.5%;height:25%">יעל שפירא<small>שעווה</small></i>
+              </div>
+              <div class="day"><b>ד׳</b>
+                <i class="ev v2" style="top:25%;height:37.5%">אפרת דיין<small>פילינג</small></i>
+                <i class="ev v1" style="top:75%;height:25%">מור אליאס<small>לייזר</small></i>
+              </div>
+            </div>
+          </div>
+          <div class="bubble" id="bubble">✉ השעה הוצעה לשירה לוי</div>
+        </div>
+      </article>
+      <article class="card s2 reveal d1"><div class="ico">📅</div><h3>קביעת תור 24/7</h3><p>באתר בעיצוב של העסק שלך. הלקוחה בוחרת טיפול, עובדת ושעה — וזהו.</p></article>
+      <article class="card s2 reveal"><div class="ico">💌</div><h3>בקשה מיוחדת</h3><p>אין שעה שמתאימה לה? היא משאירה ימים ושעות שנוחים לה, והמערכת מודיעה לה ברגע שמשהו מתפנה.</p></article>
+      <article class="card s2 reveal d1"><div class="ico">🔔</div><h3>תזכורות ואישור הגעה</h3><p>SMS, מייל ושיחה קולית — "הקישי 1 לאישור". פחות לקוחות שלא מגיעות.</p></article>
+      <article class="card s2 reveal d2"><div class="ico">⏱</div><h3>משך תור לכל לקוחה</h3><p>לקוחה צריכה יותר זמן? מאריכים לה את התור, והיומן דואג שלא תהיה חפיפה.</p></article>
+      <article class="card s2 reveal"><div class="ico">👩‍👩‍👧</div><h3>יומן לכל הצוות</h3><p>כל עובדת עם השעות והטיפולים שלה, ביומן שבועי ויומי.</p></article>
+      <article class="card s2 reveal d1"><div class="ico">📇</div><h3>כרטסת לכל לקוחה</h3><p>הערות ותמונות לכל לקוחה — מה עשיתן, באיזה צבע, איך העור הגיב, תמונות לפני ואחרי — לצד כל הביקורים שלה.</p></article>
+      <article class="card s2 reveal d2"><div class="ico">₪</div><h3>דוחות שמספרים לך הכל</h3><p>כמה נכנס השבוע, ממוצע לתור, מי ביטלה ומתי — וסיכום שבועי שמגיע אלייך למייל.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- KOSHER PHONE CALL -->
+<section class="kosher" id="kosher">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">גם בלי אינטרנט. גם בלי וואטסאפ.</span>
+      <h2>לקוחה עם <span class="gold">טלפון כשר?</span><br>היא מקבלת שיחה.</h2>
+      <p class="sub">יום לפני התור הטלפון שלה מצלצל, וקול מוקלט מזכיר לה את התור — בשם העסק שלך. היא מקישה <b>1</b> לאישור או <b>2</b> לביטול, והתשובה נכנסת ליומן שלך לבד. בלי אפליקציה, בלי קישור, בלי שום התקנה.</p>
+      <ul class="ticks">
+        <li>השיחה יוצאת אוטומטית — את לא מתקשרת לאף אחת</li>
+        <li>אישור או ביטול נרשמים ביומן מיד, וביטול פותח את השעה לבאה בתור</li>
+        <li>ללקוחות עם סמארטפון — גם SMS ומייל עם כפתור אישור</li>
+      </ul>
+    </div>
+    <div class="kphone-wrap reveal d2">
+      <div class="kphone" id="kphone">
+        <div class="kscreen">
+          <div class="kring" id="kring">📞 שיחה נכנסת…</div>
+          <div class="ksay" id="ksay"></div>
+        </div>
+        <div class="kpad">
+          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>*</span><span>0</span><span>#</span>
+        </div>
+      </div>
+      <div class="kres" id="kres">✓ אישור הגעה נרשם ביומן</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRY IT -->
+<section class="try" id="try">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">אל תאמיני לי — נסי את בעצמך</span>
+      <h2>פשוט ללקוחות. <span class="gold">חכם בשבילך.</span></h2>
+      <p class="sub">זה אתר דמו אמיתי של סלון לדוגמה, ממש כאן בטלפון. היכנסי בתור לקוחה וקבעי תור — ואחר כך בתור בעלת העסק, ותראי את היומן, הלקוחות והדוחות.</p>
+    </div>
+    <div class="try-grid">
+      <div class="tphone reveal">
+        <div class="screen"><iframe id="demoFrame" title="דמו חי של אתר תורים" loading="lazy" data-src="https://demo-hakol-beklik.netlify.app/"></iframe>
+          <div class="owner-hint" id="ownerHint" hidden>✨ נכנסת ישר ליומן של בעלת העסק — בלי סיסמה.<br>אם עדיין רואים את מסך הלקוחה, גללי למטה ולחצי על <b>"הכל בקליק — לעסקים"</b>.</div>
+          <button class="tcover" id="tcover" type="button"><span class="play"><svg viewBox="0 0 24 24" fill="#2a1a05"><path d="M7 4v16l13-8z"/></svg></span><b>לחצי להפעלת הדמו</b></button>
+        </div>
+      </div>
+      <div class="try-side reveal d2">
+        <div class="modes" role="tablist">
+          <button class="mode on" type="button" data-mode="client"><b>👩 מה הלקוחה רואה</b><span>נסי בעצמך לקבוע תור</span></button>
+          <button class="mode" type="button" data-mode="owner"><b>💼 מה את, בעלת העסק, רואה</b><span>נסי בעצמך את היומן שלך</span></button>
+        </div>
+        <div class="tips" data-for="client">
+          <div class="tip"><em>1</em>לחצי על <b>קביעת תור</b></div>
+          <div class="tip"><em>2</em>בחרי טיפול, ואז עובדת</div>
+          <div class="tip"><em>3</em>ראי את השעות הפנויות בלוח וקבעי תור</div>
+          <div class="tip"><em>4</em>הציצי ב<b>קצת עלינו</b> וב<b>פינוקים חדשים</b></div>
+        </div>
+        <div class="tips" data-for="owner" hidden>
+          <div class="tip"><em>1</em>נכנסת ישר ליומן — בלי סיסמה. (תמיד אפשר גם דרך הקישור <b>הכל בקליק — לעסקים</b> בתחתית הדמו)</div>
+          <div class="tip"><em>2</em>כל העובדות, כל התורים, בשבוע או ביום</div>
+          <div class="tip"><em>3</em>פתחי את התפריט ☰: <b>לקוחות</b>, <b>צוות</b>, <b>שירותים</b></div>
+          <div class="tip"><em>4</em>פתחי כרטיס של לקוחה — הערות, תמונות וכל הביקורים</div>
+          <div class="tip"><em>5</em>לחצי על תור — אפשר להאריך, להזיז או לבטל</div>
+        </div>
+        <a class="btn btn-gold" id="fullDemo" href="https://demo-hakol-beklik.netlify.app/" target="_blank" rel="noopener">פתחי את הדמו במסך מלא ↗</a>
+        <small>זה דמו: הנתונים מומצאים, לא נשלחות הודעות ולא נקבעים תורים אמיתיים. רענון מחזיר להתחלה.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section id="get">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">מה את מקבלת</span>
+      <h2>חבילה אחת. <span class="gold">הכל כלול.</span></h2>
+      <p class="sub">לא עוד אפליקציה שצריך ללמוד לבד. אני מקימה, מעצבת ומלווה — את רק מתחילה לקבל תורים.</p>
+    </div>
+    <div class="get">
+      <div class="g reveal"><b>🌐</b><h3>אתר תורים משלך</h3><p>עם הלוגו, הצבעים, התמונות ו"מי אנחנו" של העסק. כתובת שאפשר לשים באינסטגרם, בוואטסאפ ובגוגל.</p></div>
+      <div class="g reveal d1"><b>🛠</b><h3>הקמה מלאה</h3><p>אני מכניסה את העובדות, הטיפולים, המחירים, משכי הזמן והשעות — הכל מוכן לעבודה.</p></div>
+      <div class="g reveal d2"><b>📇</b><h3>העברת לקוחות</h3><p>רשימת הלקוחות שלך מאקסל עוברת למערכת, עם כרטיס לכל לקוחה.</p></div>
+      <div class="g reveal"><b>🔔</b><h3>תזכורות כלולות</h3><p>SMS, מייל ושיחה קולית עם אישור הגעה — כלולים בדמי השימוש החודשיים.</p></div>
+      <div class="g reveal d1"><b>🎓</b><h3>הדרכה אישית</h3><p>אני מראה לך ולצוות איך עובדים עם היומן, הכרטסת, הבקשות וההגדרות.</p></div>
+      <div class="g reveal d2"><b>💜</b><h3>תמיכה ועדכונים</h3><p>זמינה בוואטסאפ ובטלפון. המערכת מתעדכנת ומשתפרת כל הזמן — בלי תוספת מצדך.</p></div>
+    </div>
+
+    <div class="center reveal" style="margin-top:110px">
+      <span class="eyebrow">איך מתחילים</span>
+      <h2>שלושה צעדים, <span class="gold">ואת באוויר.</span></h2>
+    </div>
+    <ol class="how">
+      <li class="reveal"><em>1</em><h3>מדברות</h3><p>שיחה קצרה בוואטסאפ או בטלפון. אני מראה לך את המערכת ושומעת מה העסק שלך צריך.</p></li>
+      <li class="reveal d1"><em>2</em><h3>שולחת לי פרטים</h3><p>לוגו, טיפולים ומחירים, עובדות ושעות. אם יש — גם רשימת לקוחות.</p></li>
+      <li class="reveal d2"><em>3</em><h3>מקבלת אתר מוכן</h3><p>תוך כמה ימים: אתר בעיצוב שלך, יומן מוכן והדרכה. שולחת את הקישור ללקוחות — וזהו.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">שאלות ששואלים אותי</span>
+      <h2>רגע, ו<span class="gold">מה עם...</span></h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>מה זו מערכת לקביעת תורים אונליין?</summary><p>זה אתר זימון תורים של העסק שלך, שבו הלקוחות קובעות, משנות ומבטלות תור לבד — בכל שעה, מהטלפון או מהמחשב. את מקבלת יומן מסודר, תזכורות שיוצאות לבד, ושעות שהתפנו מתמלאות מעצמן. בלי לרדוף אחרי הודעות ושיחות.</p></details>
+      <details class="reveal"><summary>אני צריכה להבין במחשבים?</summary><p>ממש לא. אני מקימה את הכל: האתר, העיצוב, העובדות, הטיפולים והשעות. מקבלת הדרכה קצרה, ומשם זה פשוט עובד.</p></details>
+      <details class="reveal"><summary>הלקוחות שלי עם טלפון כשר או אינטרנט מסונן. זה עובד?</summary><p>כן. הלקוחות עם טלפון כשר מקבלות תזכורת ב-SMS ובשיחה קולית עם אישור בהקשה. והאתר נבנה כך שייפתח גם אצל מי שיש לה סינון.</p></details>
+      <details class="reveal"><summary>האתר יהיה בעיצוב שלי?</summary><p>כן. הלוגו, הצבעים, הגופן, התמונות, "מי אנחנו" — הכל של העסק שלך. הלקוחות רואות את העסק שלך, לא מערכת כללית.</p></details>
+      <details class="reveal"><summary>יש לי רשימת לקוחות. אפשר להעביר אותה?</summary><p>כן, מאקסל. כל הלקוחות נכנסות למערכת עם הפרטים שלהן, ומקבלות כרטיס עם ההיסטוריה.</p></details>
+      <details class="reveal"><summary>כמה זמן לוקחת ההקמה?</summary><p>בדרך כלל כמה ימים מרגע שיש את הפרטים: טיפולים, מחירים, שעות ולוגו.</p></details>
+      <details class="reveal"><summary>כמה זה עולה?</summary><p>דברי איתי ואשלח לך הצעה מסודרת: הקמה חד-פעמית ודמי שימוש חודשיים, כולל תמיכה, עדכונים ותזכורות.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final" id="contact">
+  <div class="glow"></div>
+  <div class="wrap reveal">
+    <span class="eyebrow">פחות טלפונים. יותר תורים.</span>
+    <h2>בואי נבנה את<br><span class="gold">היומן המלא שלך.</span></h2>
+    <p class="sub" style="margin-inline:auto">שיחה קצרה, בלי התחייבות. אראה לך איך זה ייראה אצלך.</p>
+    <div class="contacts">
+      <a class="btn btn-wa wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg> וואטסאפ</a>
+      <a class="btn btn-gold" href="tel:+972548920993"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.3 1z"/></svg> 054-8920993</a>
+      <a class="btn btn-white" href="mailto:allclick2027@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> allclick2027@gmail.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> הכל בקליק — מערכת תורים לעסקי יופי</span>
+    <span>הסלון והלקוחות בתמונות ובסרטון בדויים, לצורך הדגמה.</span>
+  </div>
+</footer>
+
+<a class="fab wa" id="fab" href="#" target="_blank" rel="noopener" aria-label="וואטסאפ"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg></a>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // WhatsApp links
+  var waText = encodeURIComponent('היי איילת, ראיתי את האתר של הכל בקליק ואשמח לשמוע פרטים על מערכת התורים 🙂');
+  document.querySelectorAll('.wa').forEach(function(a){ a.href = 'https://wa.me/972548920993?text=' + waText; });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // nav + fab
+  var nav = document.getElementById('nav'), fab = document.getElementById('fab');
+  function onScroll(){ var y = window.scrollY; nav.classList.toggle('solid', y > 30); fab.classList.toggle('show', y > 600); }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // reveal on scroll
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .18, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal, #calls').forEach(function(el){ io.observe(el); });
+
+  // counters
+  document.querySelectorAll('.count').forEach(function(el){
+    var to = +el.dataset.to, t0 = null;
+    if (reduce){ el.textContent = to; return; }
+    function step(t){ if (!t0) t0 = t; var p = Math.min(1, (t - t0) / 1400); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); }
+    setTimeout(function(){ requestAnimationFrame(step); }, 600);
+  });
+
+  // pointer: spotlight, card glow, 3D tilt
+  var spot = document.getElementById('spot'), tilt = document.getElementById('tilt'), stage = document.getElementById('stage');
+  var fine = matchMedia('(pointer:fine)').matches;
+  if (fine && !reduce){
+    addEventListener('pointermove', function(e){
+      spot.style.left = e.clientX + 'px'; spot.style.top = e.clientY + 'px';
+      var r = stage.getBoundingClientRect();
+      if (r.bottom > 0 && r.top < innerHeight){
+        var x = (e.clientX - (r.left + r.width / 2)) / innerWidth, y = (e.clientY - (r.top + r.height / 2)) / innerHeight;
+        tilt.style.transform = 'rotateY(' + (x * 14) + 'deg) rotateX(' + (-y * 10) + 'deg)';
+      }
+    }, { passive: true });
+  } else { spot.style.display = 'none'; }
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('pointermove', function(e){ var r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); });
+  });
+
+  // video inside the big phone: tap to play, tap again to pause
+  var v = document.getElementById('promo'), hp = document.getElementById('hphone');
+  function toggle(){ if (v.paused){ v.muted = false; v.play().catch(function(){}); } else v.pause(); }
+  hp.addEventListener('click', toggle);
+  hp.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); } });
+  document.getElementById('watch').addEventListener('click', function(){
+    hp.scrollIntoView({ behavior: 'smooth', block: 'center' }); if (v.paused) toggle();
+  });
+  v.addEventListener('play', function(){ hp.classList.add('playing'); });
+  v.addEventListener('pause', function(){ hp.classList.remove('playing'); });
+  v.addEventListener('ended', function(){ hp.classList.remove('playing'); v.currentTime = 0; });
+
+  // מונה השיחות שלא נענו: רץ מ-1 עד 6 ונעצר
+  (function(){
+    var b = document.getElementById('badge6'), done = false;
+    var o = new IntersectionObserver(function(es){
+      if (!es[0].isIntersecting || done) return; done = true;
+      var n = 1; b.textContent = '1';
+      setTimeout(function tick(){ if (n < 6){ n++; b.textContent = String(n); setTimeout(tick, 320); } }, 1700);
+    }, { threshold: .4 });
+    o.observe(document.getElementById('calls'));
+  })();
+
+  // live demo: a cancelled slot refills itself
+  (function(){
+    var oldEv = document.getElementById('evCancel'), newEv = document.getElementById('evNew'), bub = document.getElementById('bubble'),
+        clock = document.getElementById('liveClock'), started = false;
+    var steps = [
+      [0,    function(){ oldEv.className = 'ev v1 gone-ev'; newEv.classList.remove('on'); bub.classList.remove('on'); clock.textContent = '16:20'; }],
+      [1600, function(){ oldEv.classList.add('flash'); clock.textContent = '16:21'; }],
+      [3600, function(){ oldEv.classList.add('off'); }],
+      [4200, function(){ bub.classList.add('on'); clock.textContent = '16:22'; }],
+      [6000, function(){ bub.classList.remove('on'); newEv.classList.add('on'); clock.textContent = '16:24'; }]
+    ];
+    function run(){ steps.forEach(function(s){ setTimeout(s[1], s[0]); }); setTimeout(run, 10000); }
+    var o = new IntersectionObserver(function(es){ if (es[0].isIntersecting && !started){ started = true; run(); } }, { threshold: .4 });
+    o.observe(document.getElementById('live'));
+  })();
+
+  // kosher phone: ring → message → press 1 → confirmed
+  (function(){
+    var ph = document.getElementById('kphone'), ring = document.getElementById('kring'), say = document.getElementById('ksay'),
+        res = document.getElementById('kres'), keys = ph.querySelectorAll('.kpad span'), started = false;
+    var msg = 'שלום, מדברים מחגית אסתטיקה. מחר ב-17:00 יש לך תור. לאישור הקישי 1, לביטול 2.';
+    function type(i){ if (i <= msg.length){ say.textContent = msg.slice(0, i); setTimeout(function(){ type(i + 1); }, 38); } }
+    function cycle(){
+      say.textContent = ''; res.classList.remove('on'); ring.textContent = '📞 שיחה נכנסת…'; ph.classList.add('ringing');
+      setTimeout(function(){ ph.classList.remove('ringing'); ring.textContent = '🔊 בשיחה'; type(0); }, 2200);
+      setTimeout(function(){ keys[0].classList.add('press'); }, 2200 + msg.length * 38 + 700);
+      setTimeout(function(){ keys[0].classList.remove('press'); ring.textContent = '✓ תודה, נתראה!'; res.classList.add('on'); }, 2200 + msg.length * 38 + 1100);
+      setTimeout(cycle, 2200 + msg.length * 38 + 4600);
+    }
+    var o = new IntersectionObserver(function(es){ if (es[0].isIntersecting && !started){ started = true; cycle(); } }, { threshold: .4 });
+    o.observe(ph);
+  })();
+
+  // live demo in a phone: load only when asked; customer / owner tips
+  var DEMO_URL = 'https://demo-hakol-beklik.netlify.app/';
+  var demoFrame = document.getElementById('demoFrame'), tcover = document.getElementById('tcover'), fullDemo = document.getElementById('fullDemo');
+  function startDemo(){ if (!demoFrame.getAttribute('src')) demoFrame.src = demoFrame.dataset.src; tcover.classList.add('gone'); }
+  tcover.addEventListener('click', startDemo);
+  document.querySelectorAll('.mode').forEach(function(m){
+    m.addEventListener('click', function(){
+      document.querySelectorAll('.mode').forEach(function(x){ x.classList.toggle('on', x === m); });
+      document.querySelectorAll('.tips').forEach(function(t){
+        var show = t.dataset.for === m.dataset.mode; t.hidden = !show;
+        if (show) t.querySelectorAll('.tip').forEach(function(tp){ tp.style.animation = 'none'; void tp.offsetWidth; tp.style.animation = ''; });
+      });
+      // לקוחה — הדף הראשי של הדמו; בעלת העסק — ?owner=1 נכנס ישר למסך הניהול, בלי סיסמה
+      demoFrame.dataset.src = DEMO_URL + (m.dataset.mode === 'owner' ? '?owner=1' : '');
+      fullDemo.href = demoFrame.dataset.src;
+      demoFrame.src = demoFrame.dataset.src; tcover.classList.add('gone');
+      // מצב בעלת עסק: הסבר על הטלפון איך נכנסים ליומן. נעלם אחרי 9 שניות או בלחיצה.
+      var hint = document.getElementById('ownerHint');
+      clearTimeout(window.__hintT);
+      hint.hidden = m.dataset.mode !== 'owner';
+      if (!hint.hidden) window.__hintT = setTimeout(function(){ hint.hidden = true; }, 9000);
+      hint.onclick = function(){ hint.hidden = true; };
+    });
+  });
+
+  // line icons instead of emoji
+  var ICONS = {
+    '⏳': '<path d="M7 3h10M7 21h10M8 3c0 5 8 5 8 9s-8 4-8 9M16 3c0 5-8 5-8 9"/>',
+    '📅': '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M8 14h3"/>',
+    '💌': '<path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/><path d="M12 17.5s-2.5-1.4-2.5-3a1.3 1.3 0 0 1 2.5-.6 1.3 1.3 0 0 1 2.5.6c0 1.6-2.5 3-2.5 3z"/>',
+    '🔔': '<path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/>',
+    '⏱': '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/>',
+    '👩‍👩‍👧': '<circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.5 2.7-6 6-6s6 2.5 6 6M14 15.5c.9-.6 2-1 3-1 2.8 0 5 2 5 5"/>',
+    '₪': '<path d="M6 20V6h6a4 4 0 0 1 4 4v4M18 4v14h-6a4 4 0 0 1-4-4v-4"/>',
+    '🌐': '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>',
+    '🛠': '<path d="M14.5 6.5a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8M3 21l6-6M9.5 9.5 4 4M6 2 2 6"/>',
+    '📇': '<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.5-1.5 1.7-2 3-2s2.5.5 3 2M15 10h3M15 13h3"/>',
+    '🎓': '<path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/>',
+    '💜': '<path d="M12 20s-8-4.6-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.4-8 10-8 10z"/>'
+  };
+  document.querySelectorAll('.ico, .g > b').forEach(function(el){
+    var k = el.textContent.trim();
+    if (ICONS[k]) el.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="' + (el.classList.contains('ico') ? '#fff' : '#f6dd92') + '" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' + ICONS[k] + '</svg>';
+  });
+
+  // rotating slogans
+  var slogans = [
+    'פחות טלפונים. <span class="hl">יותר לקוחות.</span>',
+    'את בטיפול. <span class="hl">התורים מסתדרים לבד.</span>',
+    'שעה שהתפנתה? <span class="hl">כבר מלאה.</span>',
+    'הלקוחות קובעות לבד, <span class="hl">גם ב-2 בלילה.</span>',
+    'פחות זמן בטלפון. <span class="hl">יותר זמן ללקוחות.</span>',
+    'תזכורת יוצאת. <span class="hl">הלקוחה מגיעה.</span>',
+    'טלפון כשר? <span class="hl">מקבלת שיחה עם תזכורת.</span>'
+  ];
+  var rot = document.getElementById('rot'), dots = document.getElementById('dots'), si = 0;
+  slogans.forEach(function(){ dots.appendChild(document.createElement('i')); });
+  function wordsOf(html){
+    var tmp = document.createElement('div'); tmp.innerHTML = html; var out = [];
+    tmp.childNodes.forEach(function(n){
+      var cls = n.nodeType === 1 ? n.className : '';
+      n.textContent.split(/\s+/).filter(Boolean).forEach(function(w){ out.push({ w: w, c: cls }); });
+    });
+    return out;
+  }
+  function showSlogan(){
+    var parts = wordsOf(slogans[si]);
+    rot.innerHTML = '';
+    parts.forEach(function(p, i){
+      var s = document.createElement('span'); s.className = 'w' + (p.c ? ' ' + p.c : ''); s.textContent = p.w;
+      rot.appendChild(s); rot.appendChild(document.createTextNode(' '));
+      setTimeout(function(){ s.classList.add('in'); }, reduce ? 0 : 90 + i * 110);
+    });
+    Array.prototype.forEach.call(dots.children, function(d, j){ d.classList.toggle('on', j === si); });
+    setTimeout(function(){
+      var ws = rot.querySelectorAll('.w');
+      ws.forEach(function(s, i){ setTimeout(function(){ s.classList.add('out'); }, reduce ? 0 : i * 60); });
+      setTimeout(function(){ si = (si + 1) % slogans.length; showSlogan(); }, reduce ? 50 : 500 + ws.length * 60);
+    }, 3300);
+  }
+  showSlogan();
+
+  // stars
+  var cv = document.getElementById('stars'), ctx = cv.getContext('2d'), stars = [], W, H, dpr = Math.min(2, devicePixelRatio || 1);
+  function size(){ W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    stars = []; var n = Math.round(W * H / 14000); for (var i = 0; i < n; i++) stars.push({ x: Math.random() * W, y: Math.random() * H, r: Math.random() * 1.4 + .3, p: Math.random() * 6.28, s: Math.random() * .02 + .005, g: Math.random() < .18 }); }
+  function draw(){
+    ctx.clearRect(0, 0, W, H);
+    stars.forEach(function(s){ s.p += s.s; var a = .25 + .75 * Math.abs(Math.sin(s.p)); ctx.fillStyle = s.g ? 'rgba(246,221,146,' + a + ')' : 'rgba(255,255,255,' + a * .7 + ')'; ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 6.28); ctx.fill(); });
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  // שכבת הכוכבים מציירת את כל המסך בכל פריים — כבויה, כדי שהאתר יהיה חלק גם במחשבים חלשים
+  if (getComputedStyle(cv).display !== 'none'){ size(); draw(); addEventListener('resize', size); }
+})();
+</script>
+</body>
+</html>
