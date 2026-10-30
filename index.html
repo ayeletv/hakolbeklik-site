@@ -481,7 +481,8 @@ body{background:var(--bg0)}
   .lead .l3{display:none}
   .stats{margin-top:24px}
   /* "מכירה את זה?" */
-  .calls{height:300px}
+  /* השיחות שלא נענו: מקום לכל ארבעת הכרטיסים, כדי שלא יעלו על "מכירה את זה?" */
+  .calls{height:400px;margin-bottom:10px}
   .problem .sub{display:none}
   /* היכולות: כרטיסים קטנים בשתי עמודות — אייקון וכותרת בלבד */
   .bento{grid-template-columns:1fr 1fr!important;gap:10px;margin-top:28px}
@@ -847,7 +848,7 @@ summary::after{color:#9fd8ff}
       </div>
       <div class="stats">
         <div class="stat"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><b dir="ltr" style="unicode-bidi:isolate">24/7</b><span>קביעת תור גם בלילה</span></div>
-        <div class="stat"><i><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 15.2c.7-.4 1.4-.6 2.2-.6 2.6 0 4.8 2.1 4.8 4.8"/></svg></i><b>0</b><span>טלפונים באמצע טיפול</span></div>
+        <div class="stat"><i><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></i><b>3 דרכים</b><span>תזכורות: SMS, מייל ושיחה</span></div>
         <div class="stat"><i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg></i><b>שעות שהתפנו</b><span>מתמלאות לבד</span></div>
         <div class="stat"><i><svg viewBox="0 0 24 24"><path d="M4 20V14M10 20V9M16 20V12M22 20V5M2 20h22"/></svg></i><b>יותר לקוחות</b><span>והכנסות גבוהות</span></div>
       </div>
