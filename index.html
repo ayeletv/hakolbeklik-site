@@ -454,7 +454,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 }
 
 /* ================================================================
-   עיצוב "הייטק, יוקרתי ונקי" (גרסה 5 שאיילת בחרה): כחול-לילה, זוהר
+   עיצוב "הייטק, יוקרתי ונקי" (גרסה 5): כחול-לילה, זוהר
    כחול-סגול, כרטיסי זכוכית, טלפון לבן עם כרטיסים צפים ופס יכולות למטה.
    ================================================================ */
 :root{
@@ -474,6 +474,43 @@ body{background:var(--bg0)}
 .rot .w{filter:none!important;transition:opacity .45s,transform .45s cubic-bezier(.2,1.2,.4,1)}
 .rot .w.out{filter:none!important}
 .reveal{transition-duration:.6s}
+/* טלפון: פחות טקסט, פחות גלילה. במחשב הכל נשאר כמו שהוא. */
+@media (max-width:560px){
+  section{padding:56px 0}
+  .lead{font-size:16px}
+  .lead .l3{display:none}
+  .stats{margin-top:24px}
+  /* "מכירה את זה?" */
+  .calls{height:300px}
+  .problem .sub{display:none}
+  /* היכולות: כרטיסים קטנים בשתי עמודות — אייקון וכותרת בלבד */
+  .bento{grid-template-columns:1fr 1fr!important;gap:10px;margin-top:28px}
+  .bento .card:not(.hero-card){grid-column:auto!important;padding:16px 12px;text-align:center}
+  .bento .card:not(.hero-card) p{display:none}
+  .bento .card:not(.hero-card) .ico{margin:0 auto 10px;width:46px;height:46px}
+  .bento .card:not(.hero-card) h3{font-size:15px;margin:0}
+  .bento .hero-card{grid-column:1/-1!important}
+  .bento .hero-card .flow,.bento .hero-card>div>p{display:none}
+  /* טלפון כשר */
+  .kosher .ticks{display:none}
+  .kosher .sub{font-size:15.5px}
+  /* נסי בעצמך */
+  .try .sub{display:none}
+  .tips{display:none!important}
+  .try-side small{display:none}
+  .try-grid{margin-top:24px;gap:22px}
+  /* מה את מקבלת: אייקון וכותרת בלבד, ובלי "איך מתחילים" */
+  #get .sub{display:none}
+  .get{grid-template-columns:1fr 1fr!important;gap:10px;margin-top:24px}
+  .g{padding:14px 10px;text-align:center}
+  .g p{display:none}
+  .g h3{font-size:15px;margin:0}
+  .g b{margin-bottom:6px}
+  #get .center[style],.how{display:none!important}
+  /* שאלות: רק 4 הראשונות */
+  .faq details:nth-of-type(n+5){display:none}
+  .faq{margin-top:24px}
+}
 .fc{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .card,.g,.tip,.mode,details{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .stream.s1,.stream.s2,.stream.s3{will-change:stroke-dashoffset}
@@ -803,7 +840,7 @@ summary::after{color:#9fd8ff}
       <div class="rot" id="rot" aria-live="polite"></div>
       <svg class="swash" viewBox="0 0 300 24" aria-hidden="true"><path d="M4 16C70 6 170 4 296 10" fill="none" stroke="url(#sg)" stroke-width="5" stroke-linecap="round"/><path d="M30 20c60-6 140-8 220-4" fill="none" stroke="url(#sg)" stroke-width="2" stroke-linecap="round" opacity=".6"/><defs><linearGradient id="sg5"><stop offset="0" stop-color="#4fb8ff"/><stop offset=".5" stop-color="#5a73ff"/><stop offset="1" stop-color="#8b5cff" stop-opacity=".2"/></linearGradient><linearGradient id="sg"><stop offset="0" stop-color="#8f6a2a"/><stop offset=".5" stop-color="#d9b56a"/><stop offset="1" stop-color="#8f6a2a" stop-opacity=".2"/></linearGradient></defs></svg>
       <div class="dots" id="dots"></div>
-      <p class="lead"><b>מערכת אונליין לקביעת תורים לעסקי יופי,</b><br><span class="acc">שעובדת בשבילך 24/7 וממלאת שעות שהתפנו לבד.</span><br>קביעת תור, תזכורות אוטומטיות, ניהול יומן צוות ודוחות — הכל במקום אחד, פשוט ונוח.</p>
+      <p class="lead"><b>מערכת אונליין לקביעת תורים לעסקי יופי,</b><br><span class="acc">שעובדת בשבילך 24/7 וממלאת שעות שהתפנו לבד.</span><span class="l3"><br>קביעת תור, תזכורות אוטומטיות, ניהול יומן צוות ודוחות — הכל במקום אחד, פשוט ונוח.</span></p>
       <div class="cta">
         <a class="btn btn-gold wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg> אני רוצה כזה לעסק שלי</a>
         <button class="btn btn-ghost" type="button" id="watch"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> צפי בסרטון</button>
@@ -1086,7 +1123,7 @@ summary::after{color:#9fd8ff}
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // WhatsApp links
-  var waText = encodeURIComponent('היי איילת, ראיתי את האתר של הכל בקליק ואשמח לשמוע פרטים על מערכת התורים 🙂');
+  var waText = encodeURIComponent('היי, ראיתי את האתר של הכל בקליק ואשמח לשמוע פרטים על מערכת התורים 🙂');
   document.querySelectorAll('.wa').forEach(function(a){ a.href = 'https://wa.me/972548920993?text=' + waText; });
   document.getElementById('yr').textContent = new Date().getFullYear();
 
