@@ -367,6 +367,13 @@ h2{font-size:clamp(34px,4.8vw,60px);line-height:1.08;font-weight:900;letter-spac
 .keep li{font-size:15px;line-height:1.6}
 .keep-goal{margin:14px 0 0;color:#c3cfe3;font-size:15px}
 @media (max-width:700px){.vs,.keep ul{grid-template-columns:1fr}.unique{padding:50px 0 24px}}
+/* אור במסגרת ומאחור כשעוברים על הריבועים (בטלפון — כשנוגעים) */
+.vs-card,.keep{position:relative;transition:box-shadow .35s ease,border-color .35s ease,transform .35s ease,opacity .35s ease}
+.vs-card:hover,.keep:hover,.vs-card:active,.keep:active{
+  border-color:rgba(246,221,146,.85);transform:translateY(-3px);opacity:1;
+  box-shadow:0 0 0 1px rgba(246,221,146,.35),0 0 26px rgba(111,140,255,.38),0 0 70px rgba(246,221,146,.18)}
+.vs-them:hover,.vs-them:active{border-color:rgba(159,187,232,.7);box-shadow:0 0 0 1px rgba(159,187,232,.3),0 0 26px rgba(111,140,255,.32)}
+@media (prefers-reduced-motion:reduce){.vs-card,.keep{transition:none}.vs-card:hover,.keep:hover{transform:none}}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;margin-bottom:10px;width:100%}
 .foot-links a{color:inherit;opacity:.85;font-size:13.5px}
 @media (max-width:560px){.trial-note{font-size:13.5px;padding:8px 12px;border-radius:16px}}
