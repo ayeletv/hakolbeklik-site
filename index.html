@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>הכל בקליק — מערכת לקביעת תורים אונליין לעסקים | זימון תורים לעסקי יופי</title>
-<meta name="description" content="מערכת לקביעת תורים אונליין לעסקים: אתר זימון תורים בעיצוב שלכם, קביעת תור 24/7, שעות שהתפנו מתמלאות לבד, תזכורות ב-SMS, במייל ובשיחה לטלפון כשר. לאסתטיקה, מספרות, ספרים, ציפורניים, לייזר, גבות וריסים.">
+<title>הכל בקליק — אתר עסקי אישי עם קביעת תורים אונליין | זימון תורים לעסקי יופי</title>
+<meta name="description" content="לא עוד אפליקציה: אתר עסקי אישי בעיצוב שלכם — כרטיס ביקור דיגיטלי עם קביעת תורים אונליין 24/7, שעות שהתפנו מתמלאות לבד, תזכורות ב-SMS, במייל ובשיחה לטלפון כשר. לאסתטיקה, מספרות, ספרים, ציפורניים, לייזר, גבות וריסים.">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="YdmacDDxQraSYfFAohFsAgVvaY2FkVmRaCXLjc_fjgM" />
 <meta name="google-site-verification" content="1Ytvoe2M5aChm36bOTTZ04rMzeOBvadQsFh7bbypgNY" />
@@ -24,8 +24,8 @@
   "provider": { "@type": "Organization", "name": "הכל בקליק", "telephone": "+972-54-892-0993", "email": "allclick2027@gmail.com", "areaServed": "IL" }
 }
 </script>
-<meta property="og:title" content="הכל בקליק — אתם בטיפול. התורים מסתדרים לבד.">
-<meta property="og:description" content="מערכת תורים חכמה לעסקי יופי. קביעת תור 24/7, שעות שהתפנו מתמלאות לבד, תזכורות ב-SMS, במייל ובשיחה.">
+<meta property="og:title" content="הכל בקליק — לא עוד אפליקציה. האתר של העסק שלכם.">
+<meta property="og:description" content="אתר עסקי אישי בעיצוב שלכם — כרטיס ביקור דיגיטלי עם קביעת תורים 24/7, תזכורות ב-SMS, במייל ובשיחה, ושעות שהתפנו מתמלאות לבד.">
 <meta property="og:image" content="https://hakolbeklik.com/og-image.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#16264a">
@@ -348,6 +348,25 @@ h2{font-size:clamp(34px,4.8vw,60px);line-height:1.08;font-weight:900;letter-spac
 .trial-note{margin:14px 0 0;display:inline-block;padding:9px 16px;border-radius:999px;font-size:15px;line-height:1.5;color:#f7f3ff;background:rgba(246,221,146,0.12);border:1px solid rgba(246,221,146,0.45)}
 .trial-note b{color:#f6dd92}
 .trial-center{display:table;margin:14px auto 0;text-align:center}
+/* "לא עוד אפליקציה" */
+.unique{padding:70px 0 40px}
+.unique .center{text-align:center}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:26px auto 0}
+.vs-card{border-radius:20px;padding:20px 22px;border:1px solid rgba(159,187,232,.22);background:rgba(255,255,255,.05)}
+.vs-card h3{font-size:19px;margin:0 0 10px}
+.vs-card ul{list-style:none;margin:0;padding:0}
+.vs-card li{position:relative;padding-inline-start:26px;margin-bottom:9px;line-height:1.6;font-size:15px}
+.vs-them{opacity:.82}
+.vs-them li::before{content:'✕';position:absolute;inset-inline-start:0;color:#c9a0a8;font-weight:700}
+.vs-us{border-color:rgba(246,221,146,.55);background:rgba(246,221,146,.08);box-shadow:0 10px 40px rgba(246,221,146,.08)}
+.vs-us h3{color:#f6dd92}
+.vs-us li::before{content:'✓';position:absolute;inset-inline-start:0;color:#f6dd92;font-weight:800}
+.keep{max-width:900px;margin:22px auto 0;border-radius:20px;padding:20px 22px;border:1px solid rgba(159,187,232,.22);background:rgba(255,255,255,.04)}
+.keep h3{font-size:18px;margin:0 0 10px}
+.keep ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.keep li{font-size:15px;line-height:1.6}
+.keep-goal{margin:14px 0 0;color:#c3cfe3;font-size:15px}
+@media (max-width:700px){.vs,.keep ul{grid-template-columns:1fr}.unique{padding:50px 0 24px}}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;margin-bottom:10px;width:100%}
 .foot-links a{color:inherit;opacity:.85;font-size:13.5px}
 @media (max-width:560px){.trial-note{font-size:13.5px;padding:8px 12px;border-radius:16px}}
@@ -805,10 +824,11 @@ summary::after{color:#9fd8ff}
   <div class="wrap">
     <a class="brand" href="#top" aria-label="הכל בקליק">
       <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M5 3l14 6.5-6 2-2 6z"/><path d="M13 11.5l6 6"/></svg></span>
-      <span class="brand-t">הכל בקליק<small>מערכת תורים לעסקי יופי</small></span>
+      <span class="brand-t">הכל בקליק<small>אתר עסקי + מערכת תורים</small></span>
     </a>
     <nav class="links">
       <a href="#top">הסרטון</a>
+      <a href="#unique">מה מיוחד</a>
       <a href="#features">מה המערכת עושה</a>
       <a href="#try">נסו בעצמכם</a>
       <a href="#get">מה אתם מקבלים</a>
@@ -842,18 +862,18 @@ summary::after{color:#9fd8ff}
   <div class="wrap">
     <aside class="side-feats" aria-label="מה המערכת נותנת">
       <svg class="arc" viewBox="0 0 120 700" preserveAspectRatio="none" aria-hidden="true"><path d="M110 0C10 160 10 540 110 700" fill="none" stroke="url(#ag)" stroke-width="2"/><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b56a" stop-opacity="0"/><stop offset=".5" stop-color="#b8893a"/><stop offset="1" stop-color="#d9b56a" stop-opacity="0"/></linearGradient></defs></svg>
-      <div class="sf"><i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg></i><b>אתר תורים</b><span>בעיצוב העסק שלכם</span></div>
+      <div class="sf"><i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg></i><b>אתר עסקי אישי</b><span>כרטיס ביקור דיגיטלי</span></div>
       <div class="sf"><i><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></i><b>תזכורות אוטומטיות</b><span>SMS, מייל ושיחה</span></div>
       <div class="sf"><i><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 15.2c.7-.4 1.4-.6 2.2-.6 2.6 0 4.8 2.1 4.8 4.8"/></svg></i><b>ניהול צוות</b><span>ויומן תורים</span></div>
       <div class="sf"><i><svg viewBox="0 0 24 24"><path d="M4 20V14M10 20V9M16 20V12M22 20V5M2 20h22"/></svg></i><b>דוחות</b><span>ותובנות לעסק</span></div>
     </aside>
     <div class="hero-copy">
-      <span class="pill">מערכת תורים חכמה לעסקי יופי</span>
+      <span class="pill">✨ לא עוד אפליקציה — האתר של העסק שלכם</span>
       <h1 class="brandline"><span class="l"><span>הכל בקליק.</span></span></h1>
       <div class="rot" id="rot" aria-live="polite"></div>
       <svg class="swash" viewBox="0 0 300 24" aria-hidden="true"><path d="M4 16C70 6 170 4 296 10" fill="none" stroke="url(#sg)" stroke-width="5" stroke-linecap="round"/><path d="M30 20c60-6 140-8 220-4" fill="none" stroke="url(#sg)" stroke-width="2" stroke-linecap="round" opacity=".6"/><defs><linearGradient id="sg5"><stop offset="0" stop-color="#4fb8ff"/><stop offset=".5" stop-color="#5a73ff"/><stop offset="1" stop-color="#8b5cff" stop-opacity=".2"/></linearGradient><linearGradient id="sg"><stop offset="0" stop-color="#8f6a2a"/><stop offset=".5" stop-color="#d9b56a"/><stop offset="1" stop-color="#8f6a2a" stop-opacity=".2"/></linearGradient></defs></svg>
       <div class="dots" id="dots"></div>
-      <p class="lead"><b>מערכת אונליין לקביעת תורים לעסקי יופי,</b><br><span class="acc">שעובדת בשבילכם 24/7 וממלאת שעות שהתפנו לבד.</span><span class="l3"><br>קביעת תור, תזכורות אוטומטיות, ניהול יומן צוות ודוחות — הכל במקום אחד, פשוט ונוח.</span></p>
+      <p class="lead"><b>אתר עסקי אישי בעיצוב שלכם — כרטיס ביקור דיגיטלי,</b><br><span class="acc">עם מערכת תורים שעובדת בשבילכם 24/7 וממלאת שעות שהתפנו לבד.</span><span class="l3"><br>מכל טלפון ומכל מחשב, בלי להוריד אפליקציה — עם תזכורות, יומן צוות, כרטסת לקוחות ודוחות.</span></p>
       <div class="cta">
         <a class="btn btn-gold wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg> אני רוצה כזה לעסק שלי</a>
         <button class="btn btn-ghost" type="button" id="watch"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> צפו בסרטון</button>
@@ -917,6 +937,49 @@ summary::after{color:#9fd8ff}
   <span>אסתטיקה</span><span>הסרת שיער בלייזר</span><span>ציפורניים</span><span>מספרות</span><span>ספרים</span><span>גבות וריסים</span><span>טיפולי פנים</span><span>שעווה וחוט</span><span>קוסמטיקה</span>
   <span>אסתטיקה</span><span>הסרת שיער בלייזר</span><span>ציפורניים</span><span>מספרות</span><span>ספרים</span><span>גבות וריסים</span><span>טיפולי פנים</span><span>שעווה וחוט</span><span>קוסמטיקה</span>
 </div></div>
+
+<!-- UNIQUE: לא עוד אפליקציה -->
+<section class="unique" id="unique">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">✨ אז מה מיוחד אצלנו?</span>
+      <h2>זו לא עוד <span class="gold">אפליקציה לקביעת תורים.</span></h2>
+      <p class="sub" style="margin-inline:auto">זה <b>האתר של העסק שלכם</b> — עם השם, הלוגו, הצבעים והמיתוג שלכם. כרטיס ביקור דיגיטלי שנשאר אצל הלקוחות, ומערכת תורים מלאה בתוכו.</p>
+    </div>
+    <div class="vs reveal">
+      <div class="vs-card vs-them">
+        <h3>ברוב המערכות</h3>
+        <ul>
+          <li>נכנסים לאפליקציה גנרית — שנראית אותו דבר אצל כל העסקים</li>
+          <li>רואים שעות פנויות, קובעים ויוצאים</li>
+          <li>כלי טכני לקביעת תור, לא יותר</li>
+          <li>לפעמים צריך להוריד אפליקציה, ולפעמים זה עובד רק בטלפון</li>
+        </ul>
+      </div>
+      <div class="vs-card vs-us">
+        <h3>אצלנו ❤️</h3>
+        <ul>
+          <li><b>אתר עסקי אישי</b> שנבנה במיוחד בשבילכם — בעיצוב ובמיתוג שלכם</li>
+          <li><b>כרטיס ביקור דיגיטלי</b> — מציג את העסק, "מי אנחנו", התמונות וההמלצות</li>
+          <li><b>מכל טלפון ומכל מחשב</b> — בלי להוריד אפליקציה</li>
+          <li><b>חוזרים אליו שוב ושוב</b> — פינוקים ומבצעים, המלצות, והתורים שכבר נקבעו</li>
+        </ul>
+      </div>
+    </div>
+    <div class="keep reveal">
+      <h3>ומאחורי האתר — מערכת שלמה לניהול ולשימור לקוחות</h3>
+      <ul>
+        <li>📇 כרטיס לכל לקוח עם תמונות, היסטוריית טיפולים והערות אישיות</li>
+        <li>📞 תזכורות במייל ובשיחה קולית — מתאים לציבור החרדי ולמבוגרים שמעדיפים שיחת טלפון</li>
+        <li>💌 בקשת תור ליום ושעה מסוימים — גם כשאין כרגע זמינות</li>
+        <li>🎂 ברכת יום הולדת אוטומטית, והודעות אישיות לכל הלקוחות לחגים ולשבת</li>
+        <li>🎁 עדכונים, מבצעים ופינוקים — ישר באתר</li>
+        <li>⭐ המלצות של לקוחות שעולות לאתר</li>
+      </ul>
+      <p class="keep-goal">המטרה: הרבה יותר מיומן תורים — אתר שהוא <b>הפנים של העסק</b>, מציג אתכם בצורה מקצועית ויוקרתית, משווק בשבילכם, וגורם ללקוחות לחזור שוב ושוב.</p>
+    </div>
+  </div>
+</section>
 
 <!-- PROBLEM -->
 <section class="problem">
@@ -1295,6 +1358,7 @@ summary::after{color:#9fd8ff}
 
   // rotating slogans
   var slogans = [
+    'לא עוד אפליקציה. <span class="hl">האתר של העסק שלכם.</span>',
     'פחות טלפונים. <span class="hl">יותר לקוחות.</span>',
     'אתם בטיפול. <span class="hl">התורים מסתדרים לבד.</span>',
     'שעה שהתפנתה? <span class="hl">כבר מלאה.</span>',
