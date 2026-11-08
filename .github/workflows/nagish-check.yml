@@ -1,0 +1,25 @@
+# בדיקת נגישות אוטומטית: כל יום ראשון ב-07:00 (שעון ישראל), ובכל פעם שמעלים קבצים.
+# הבדיקה מורידה תמיד את הגרסה העדכנית של axe-core, כך שהכללים מתעדכנים לבד.
+# לא שולח מייל. הדוח המלא נשמר בלשונית Actions. את רוב מה שחסר כפתור הנגישות מתקן לבד באתר.
+name: בדיקת נגישות
+on:
+  schedule:
+    - cron: '0 5 * * 0'
+  push:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      NAGISH_URLS: https://hakolbeklik.com/ https://hakolbeklik.com/privacy.html https://hakolbeklik.com/accessibility.html https://hakolbeklik.com/nails.html https://hakolbeklik.com/booking-without-app.html
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-save playwright axe-core@latest
+      - run: npx playwright install --with-deps chromium
+      - name: wait for GitHub Pages
+        if: github.event_name == 'push'
+        run: sleep 90
+      - run: node .github/nagish-check.mjs
