@@ -1,4 +1,4 @@
-// בדיקת נגישות שבועית לפי ת"י 5568 (WCAG 2.0 AA), וגם המלצות WCAG 2.1/2.2.
+// בדיקת נגישות שבועית לפי ת"י 5568 חלק 1 (2021) = WCAG 2.0 AA, וגם המלצות WCAG 2.1/2.2.
 // רץ ב-GitHub Actions. לא שולח מייל: הדוח נשמר בלשונית Actions. את רוב מה שחסר כפתור הנגישות (nagish.js) מתקן לבד באתר.
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
@@ -34,4 +34,7 @@ await browser.close();
 const report = lines.join('\n');
 console.log(report);
 if (process.env.GITHUB_STEP_SUMMARY) (await import('node:fs')).appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
+// תאריך הבדיקה האחרונה נשמר באתר (nagish-status.json). כשאין בעיות חובה, ההצהרה מציגה אותו כ"עודכן לאחרונה".
+const today = new Date(Date.now() + 2 * 3600 * 1000).toISOString().slice(0, 10);
+(await import('node:fs')).writeFileSync('nagish-status.json', JSON.stringify({ lastCheck: today, lawIssues: mustFix, standard: 'IS 5568-1 (2021) / WCAG 2.0 AA' }, null, 2) + '\n');
 if (mustFix) console.log(`נמצאו ${mustFix} בעיות שחובה לתקן לפי ת"י 5568. כדאי לבקש מ-Claude לתקן אותן בקוד.`);
