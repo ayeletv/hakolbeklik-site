@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   <div class="crumb"><a href="./">דף הבית</a> › הצהרת נגישות</div>
   <h1>הצהרת <span class="gold">נגישות</span></h1>
   <p class="lead">חשוב לי שכל אחד ואחת יוכלו להשתמש באתר, כולל אנשים עם מוגבלות. הנגישות נבנתה לתוך האתר, ואני ממשיכה לשפר אותה.</p>
-  <p class="updated">עודכן לאחרונה: 8 בנובמבר 2026</p>
+  <p class="updated" id="lastUpdated">עודכן לאחרונה: 16 בנובמבר 2026</p>
   <nav aria-label="בעמוד הזה"><p><b>בעמוד הזה:</b> <a href="#level">רמת הנגישות</a> · <a href="#done">מה הונגש באתר</a> · <a href="#menu">תפריט הנגישות</a> · <a href="#limits">מגבלות ידועות</a> · <a href="#contact">רכזת הנגישות</a></p></nav>
 
   <h2 id="level">רמת הנגישות</h2>
@@ -118,5 +118,19 @@ footer a{color:var(--muted)}
 </main>
 <footer>© הכל בקליק — מערכת תורים לעסקי יופי · <a href="./">לדף הבית</a> · <a href="privacy.html">פרטיות ותנאים</a> · <a href="accessibility.html">הצהרת נגישות</a></footer>
 <script src="nagish.js" defer data-statement="accessibility.html"></script>
+<script>
+/* Ayelet 16.11.26 - the date moves by itself after a clean weekly accessibility check (nagish-status.json, written by .github/nagish-check.mjs).
+   While the check finds problems that the standard requires fixing, the date stays. */
+(function () {
+  var el = document.getElementById('lastUpdated'); if (!el) return;
+  var M = ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'];
+  var m = /(\d{1,2}) ב(\S+) (\d{4})/.exec(el.textContent), cur = m ? new Date(+m[3], M.indexOf(m[2]), +m[1]) : new Date(0);
+  fetch('nagish-status.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {
+    if (!s || s.lawIssues !== 0 || !s.lastCheck) return;
+    var p = s.lastCheck.split('-').map(Number), d = new Date(p[0], p[1] - 1, p[2]);
+    if (d > cur) el.textContent = 'עודכן לאחרונה: ' + p[2] + ' ב' + M[p[1] - 1] + ' ' + p[0] + ' (בדיקת נגישות שבועית)';
+  }).catch(function () { });
+})();
+</script>
 </body>
 </html>

@@ -5,6 +5,7 @@
  *   data-statement-fn  שם פונקציה גלובלית שפותחת את ההצהרה (למשל hkOpenLegal), נקראת עם 'accessibility'
  *   data-side          right | left (ברירת מחדל: right — לשונית צמודה לקצה, באמצע הגובה)
  *   הכפתור תמיד כחול (#1F4FA8, ניגודיות 7.6 מול לבן)
+ *   data-mobile      float | footer (footer: בטלפון אין לשונית צפה; פותחים מקישור באתר שקורא ל-nagishOpen())
  *   data-main          איפה מתחיל התוכן הראשי, לקישור הדילוג (ברירת מחדל: main, #main)
  * תיקון אוטומטי: משלים לבד תיאור לתמונות, שמות לכפתורים ולשדות, גישה במקלדת לרכיבים לחיצים וניגודיות צבעים.
  *   כיבוי: data-autofix="off". אלמנט שלא נוגעים בו: data-nagish-skip.
@@ -78,6 +79,7 @@
     '.pnl{position:fixed; top:50%; transform:translateY(-50%); ' + side + ':56px; width:320px; max-width:calc(100vw - 72px); max-height:calc(100vh - 32px); overflow:auto; background:#fff; color:#111; border-radius:14px; box-shadow:0 10px 40px rgba(0,0,0,.35); padding:14px; direction:rtl; text-align:right; font-size:15px;}' +
     '@media (max-width:480px){.pnl{' + side + ':8px; ' + other + ':8px; width:auto; max-width:none;}}' +
     '.pnl[hidden]{display:none}' +
+    (opt('mobile', 'float') === 'footer' ? '@media (max-width:600px){.fab{display:none}}' : '') +
     '.hd{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; background:' + C + '; color:#fff; margin:-14px -14px 12px; padding:12px 14px; border-radius:14px 14px 0 0;}' +
     'h2{font-size:17px; margin:0; color:#fff;}' +
     '.x{background:transparent; border:2px solid #fff; border-radius:8px; width:34px; height:34px; cursor:pointer; font-size:16px; color:#fff;}' +
@@ -118,10 +120,15 @@
     var l = $('[data-v="fs"]'); if (l) l.textContent = FS[st.fs || 0] + '%';
     root.querySelectorAll('[data-t]').forEach(function(b){ b.setAttribute('aria-pressed', st[b.getAttribute('data-t')] ? 'true' : 'false'); });
   }
+  var opener = null;
   function open(on){
+    if (on && pnl.hidden) opener = document.activeElement;
     pnl.hidden = !on; fab.setAttribute('aria-expanded', on ? 'true' : 'false');
-    if (on){ var f = root.querySelector('.x'); f && f.focus(); } else fab.focus();
+    if (on){ var f = root.querySelector('.x'); f && f.focus(); }
+    else if (fab.getClientRects().length) fab.focus();
+    else if (opener && opener.focus) try { opener.focus(); } catch(e){}
   }
+  window.nagishOpen = function(){ open(true); };
   function say(t){ live.textContent = ''; setTimeout(function(){ live.textContent = t; }, 30); }
   fab.addEventListener('click', function(){ open(pnl.hidden); });
   root.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !pnl.hidden){ e.preventDefault(); open(false); } });

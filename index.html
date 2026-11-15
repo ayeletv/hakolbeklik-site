@@ -841,7 +841,7 @@ summary::after{color:#9fd8ff}
       <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M5 3l14 6.5-6 2-2 6z"/><path d="M13 11.5l6 6"/></svg></span>
       <span class="brand-t">הכל בקליק<small>אתר עסקי + מערכת תורים</small></span>
     </a>
-    <nav class="links">
+    <nav class="links" aria-label="ניווט ראשי">
       <a href="#top">הסרטון</a>
       <a href="#unique">מה מיוחד</a>
       <a href="#features">מה המערכת עושה</a>
@@ -1035,7 +1035,7 @@ summary::after{color:#9fd8ff}
             <div><em>3</em>שירה אישרה בלחיצה — השעה נתפסה ✓</div>
           </div>
         </div>
-        <div class="live" id="live" aria-label="הדגמה: תור שבוטל ביומן מתמלא מחדש">
+        <div class="live" id="live" role="img" aria-label="הדגמה: תור שבוטל ביומן מתמלא מחדש">
           <div class="live-h"><span class="rec"></span>היומן שלכם · השבוע <small id="liveClock">16:20</small></div>
           <div class="cal">
             <div class="cal-times"><span>16:00</span><span>17:00</span><span>18:00</span><span>19:00</span></div>
@@ -1108,7 +1108,7 @@ summary::after{color:#9fd8ff}
     </div>
     <div class="try-grid">
       <div class="tphone reveal">
-        <div class="screen"><iframe id="demoFrame" title="דמו חי של אתר תורים" loading="lazy" data-src="demo.html"></iframe>
+        <div class="screen"><iframe id="demoFrame" title="דמו חי של אתר תורים" loading="lazy" data-src="demo.html" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;he&quot; dir=&quot;rtl&quot;&gt;&lt;title&gt;דמו&lt;/title&gt;&lt;/html&gt;"></iframe>
           <div class="demo-blocked" id="demoBlocked" hidden><b>הדמו לא נפתח ברשת הזו</b><span>כנראה בגלל הסינון. אפשר לראות איך זה עובד בסרטון למעלה, או לכתוב לי ואראה לכם.</span><a class="btn btn-gold wa" href="#" target="_blank" rel="noopener" aria-label="וואטסאפ: בואו נדבר">וואטסאפ</a></div>
           <div class="owner-hint" id="ownerHint" hidden>✨ נכנסים ישר ליומן של בעלי העסק — בלי סיסמה.<br>אם עדיין רואים את מסך הלקוח, גללו למטה ולחצו על <b>"הכל בקליק — לעסקים"</b>.</div>
           <button class="tcover" id="tcover" type="button"><span class="play"><svg viewBox="0 0 24 24" fill="#2a1a05"><path d="M7 4v16l13-8z"/></svg></span><b>לחצו להפעלת הדמו</b></button>
@@ -1328,7 +1328,7 @@ summary::after{color:#9fd8ff}
   // live demo in a phone: load only when asked; customer / owner tips
   var DEMO_URL = 'demo.html';
   var demoFrame = document.getElementById('demoFrame'), tcover = document.getElementById('tcover'), fullDemo = document.getElementById('fullDemo');
-  function startDemo(){ if (!demoFrame.getAttribute('src')) demoFrame.src = demoFrame.dataset.src; tcover.classList.add('gone'); }
+  function startDemo(){ demoFrame.removeAttribute('srcdoc'); if (!demoFrame.getAttribute('src')) demoFrame.src = demoFrame.dataset.src; tcover.classList.add('gone'); }
   // סינון שחוסם את הדמו מחזיר דף חסימה במקומו — אז מראים הודעה ידידותית במקום מסך ריק
   demoFrame.addEventListener('load', function(){
     if (!demoFrame.getAttribute('src')) return;
@@ -1347,7 +1347,7 @@ summary::after{color:#9fd8ff}
       // לקוחה — הדף הראשי של הדמו; בעלת העסק — ?owner=1 נכנס ישר למסך הניהול, בלי סיסמה
       demoFrame.dataset.src = DEMO_URL + (m.dataset.mode === 'owner' ? '?owner=1' : '');
       fullDemo.href = demoFrame.dataset.src;
-      demoFrame.src = demoFrame.dataset.src; tcover.classList.add('gone');
+      demoFrame.removeAttribute('srcdoc'); demoFrame.src = demoFrame.dataset.src; tcover.classList.add('gone');
       // מצב בעלת עסק: הסבר על הטלפון איך נכנסים ליומן. נעלם אחרי 9 שניות או בלחיצה.
       var hint = document.getElementById('ownerHint');
       clearTimeout(window.__hintT);
